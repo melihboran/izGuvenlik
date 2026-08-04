@@ -10,7 +10,7 @@
 <meta property="og:url" content="https://yekgayrimenkul.com/">
 <meta property="og:title" content="YEK Gayrimenkul | Doğru Yatırımın Güvenilir Adresi">
 <meta property="og:description" content="Konut, villa, arsa ve ticari gayrimenkul alanlarında güvenilir danışmanlık. 15+ yıl tecrübe, 5000+ memnun müşteri.">
-<meta property="og:image" content="https://yekgayrimenkul.com/assets/image/logo/yek-logo.png">
+<meta property="og:image" content="https://yekgayrimenkul.com/assets/image/logo/izLogo.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="tr_TR">
@@ -37,8 +37,19 @@
 
     <style>
 :root {
-  --yek-red: #c8101a;
-  --yek-red-dark: #990c13;
+  --yek-red: #302DB0;
+  --yek-red-dark: #131169;
+
+  /* Hizmetlerimiz kartı */
+.about-field .project-card {
+  background: #302DB0 !important;
+  background-color: #302DB0 !important;
+}
+
+.about-field .project-card::before {
+  background: #25228F !important;
+  background-color: #25228F !important;
+}
 }
 
 /* Ana kırmızı alanlar */
@@ -115,6 +126,65 @@ a:hover {
 .footer-field .bg-viking::after {
   display: none !important;
 }
+
+/* Yalnızca mobil görünüm */
+@media screen and (max-width:767px){
+
+  /* 1. slide */
+  .hero-field .iz-home-slide-image{
+      object-position:85% center !important;
+  }
+
+  /* 2. slide */
+  .hero-field .iz-security-slide-image{
+      object-position:100% center !important;
+  }
+
+  /* Menü düzeni */
+.menu-popup .content {
+  align-items: center;
+}
+
+.menu-popup .menu-contact-area {
+  width: 100%;
+}
+
+.menu-popup .contacts {
+  margin-top: 0 !important;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .menu-popup .content {
+    align-items: flex-start;
+  }
+
+  .menu-popup .menu-contact-area,
+  .menu-popup .main-menu-fix {
+    justify-self: start !important;
+    width: 100%;
+  }
+
+  .menu-popup .contacts {
+    text-align: left !important;
+  }
+
+  .menu-popup .button-group {
+    justify-content: flex-start !important;
+  }
+
+
+}
+
+}
+
+/* Masaüstü menü bağlantılarını yukarı taşı */
+.menu-popup .main-menu-fix {
+  align-self: center !important;
+  position: relative !important;
+  top: -40px !important;
+}
 </style>
 
     <!-- Google tag (gtag.js) -->
@@ -139,19 +209,10 @@ a:hover {
             <div
                 class="wrapper lg:container mx-auto px-30 py-60 ct:py-45 lg:py-30 flex items-center justify-between relative z-2">
 <a href="index.html" title="YEK Gayrimenkul" class="logo yek-logo-link block">
-    <img src="assets/image/logo/yek-logo.png" alt="YEK Gayrimenkul" class="yek-logo-header">
+    <img src="assets/image/logo/izLogo.png" alt="YEK Gayrimenkul" class="yek-logo-header">
 </a>
                 <div class="tools flex items-center">
-                    <a href="tel:4449782" title="Çağrı Merkezi" class="call text-right sm:hidden">
-                        <div class="title text-white text-14 font-light leading-none mb-5">Çağrı Merkezi</div>
-                        <div class="number leading-none tracking-tighter text-white font-bold text-24 duration-350">
-                            444 0 000
-                        </div>
-                    </a>
-                    <a href="tel:4449782" title="Çağrı Merkezi" class="call-mobile text-right hidden sm:block">
-                        <span
-                            class="icon icon-phone text-16 leading-0 text-white block duration-300 relative z-2"></span>
-                    </a>
+
 
                     <div class="menu-trigger cursor-pointer ml-30">
                         <svg class="block w-18 h-18 fill-white relative z-2" xmlns="http://www.w3.org/2000/svg"
@@ -179,18 +240,21 @@ a:hover {
       <div class="swiper-wrapper h-full">
 <div class="swiper-slide h-full relative overflow-hidden">
   <div class="image absolute w-full left-0 bottom-0 opacity-80 ct:opacity-60 pointer-events-none h-full">
-    <img src="assets/image/slide/slide1.png" alt="Hayalinizdeki yaşam burada başlıyor." data-swiper-parallax-y="50%" class="block w-full h-full object-cover object-center">
+    <img src="assets/image/slide/slide1.png"
+     alt="Hayalinizdeki yaşam burada başlıyor."
+     data-swiper-parallax-y="50%"
+     class="block w-full h-full object-cover object-center iz-home-slide-image">
   </div>
   <div class="content lg:container mx-auto px-30 relative z-2 h-full flex flex-col justify-center">
     <div data-swiper-parallax-x="25%" data-swiper-parallax-opacity="0" class="title ct:mx-auto ct:text-center ct:max-w-750 text-68 ct:text-48 lg:text-42 md:text-36 sm:text-30 xs:text-25 text-white leading-tighter">
-      Hayalinizdeki yaşam<br><strong> burada başlıyor.</strong>
+      Güvenliğin ve Profesyonel<br><strong> Hizmetin Güvencesi</strong>
     </div>
     <div class="subtitle text-white text-20 md:text-18 sm:text-16 opacity-70 mt-20 max-w-520 ct:text-center ct:mx-auto">
-      Seçkin konut projeleri ve yatırım fırsatları.
+      Özel güvenlikten temizlik hizmetlerine, personel temininden dezenfekte uygulamalarına kadar işletmenize kapsamlı ve güvenilir çözümler sunuyoruz.
     </div>
     <div class="button-wrapper mt-60 ct:mt-45 md:mt-30 ct:mx-auto">
      <a href="projeler/1.html" title="İlanlarımız" class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 w-fit primary bg-viking before:bg-gothic px-30 space-x-30 w-full rounded-100 h-60 ct:h-50 flex justify-between">
-        <div class="text relative z-2 backface-hidden shrink-0 duration-450 text-18 ct:text-16 text-woodsmoke">İlanlarımızı İncele</div>
+        <div class="text relative z-2 backface-hidden shrink-0 duration-450 text-18 ct:text-16 text-woodsmoke">Hizmetlerimizi İnceleyin</div>
         <div class="icon relative z-2 backface-hidden shrink-0 duration-450 text-14 text-woodsmoke"><span class="icon-el icon-arrow-short-to-right leading-0 block"></span></div>
       </a>
     </div>
@@ -199,18 +263,22 @@ a:hover {
 
 <div class="swiper-slide h-full relative overflow-hidden">
   <div class="image absolute w-full left-0 bottom-0 opacity-80 ct:opacity-60 pointer-events-none h-full">
-    <img src="assets/image/slide/slide3.png" alt="Şehrin içinde doğayla iç içe yaşam." data-swiper-parallax-y="50%" class="block w-full h-full object-cover object-center">
+    <img
+  src="assets/image/slide/slide2.png"
+  alt="Profesyonel Özel Güvenlik Hizmetleri"
+  data-swiper-parallax-y="50%"
+  class="block w-full h-full object-cover object-center iz-security-slide-image">
   </div>
   <div class="content lg:container mx-auto px-30 relative z-2 h-full flex flex-col justify-center">
     <div data-swiper-parallax-x="25%" data-swiper-parallax-opacity="0" class="title ct:mx-auto ct:text-center ct:max-w-750 text-68 ct:text-48 lg:text-42 md:text-36 sm:text-30 xs:text-25 text-white leading-tighter">
-      Şehrin içinde<br><strong> doğayla iç içe yaşam.</strong>
+      Profesyonel Özel<br><strong> Güvenlik Hizmetleri</strong>
     </div>
     <div class="subtitle text-white text-20 md:text-18 sm:text-16 opacity-70 mt-20 max-w-520 ct:text-center ct:mx-auto">
-      Özel mimariye sahip villa seçenekleri.
+      Eğitimli ve deneyimli güvenlik personelimiz ile tesislerinizi, çalışanlarınızı ve ziyaretçilerinizi 7/24 güvence altına alıyoruz.
     </div>
     <div class="button-wrapper mt-60 ct:mt-45 md:mt-30 ct:mx-auto">
      <a href="projeler/1.html" title="İlanlarımız" class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 w-fit primary bg-viking before:bg-gothic px-30 space-x-30 w-full rounded-100 h-60 ct:h-50 flex justify-between">
-        <div class="text relative z-2 backface-hidden shrink-0 duration-450 text-18 ct:text-16 text-woodsmoke">İlanlarımızı İncele</div>
+        <div class="text relative z-2 backface-hidden shrink-0 duration-450 text-18 ct:text-16 text-woodsmoke">Detaylı Bilgi</div>
         <div class="icon relative z-2 backface-hidden shrink-0 duration-450 text-14 text-woodsmoke"><span class="icon-el icon-arrow-short-to-right leading-0 block"></span></div>
       </a>
     </div>
@@ -219,18 +287,18 @@ a:hover {
 
 <div class="swiper-slide h-full relative overflow-hidden">
   <div class="image absolute w-full left-0 bottom-0 opacity-80 ct:opacity-60 pointer-events-none h-full">
-    <img src="assets/image/slide/slide2.png" alt="İşinizi büyütecek doğru lokasyonlar." data-swiper-parallax-y="50%" class="block w-full h-full object-cover object-center">
+    <img src="assets/image/slide/slide3.png" alt="İşinizi büyütecek doğru lokasyonlar." data-swiper-parallax-y="50%" class="block w-full h-full object-cover object-center">
   </div>
   <div class="content lg:container mx-auto px-30 relative z-2 h-full flex flex-col justify-center">
     <div data-swiper-parallax-x="25%" data-swiper-parallax-opacity="0" class="title ct:mx-auto ct:text-center ct:max-w-750 text-68 ct:text-48 lg:text-42 md:text-36 sm:text-30 xs:text-25 text-white leading-tighter">
-      İşinizi büyütecek<br><strong> doğru lokasyonlar.</strong>
+      Hijyenik ve Profesyonel<br><strong> Temizlik Çözümleri</strong>
     </div>
     <div class="subtitle text-white text-20 md:text-18 sm:text-16 opacity-70 mt-20 max-w-520 ct:text-center ct:mx-auto">
-      Ofis, mağaza ve ticari yatırım çözümleri.
+      Ofislerden fabrikalara, yaşam alanlarından kurumsal tesislere kadar kaliteli, düzenli ve güvenilir temizlik hizmeti sunuyoruz.
     </div>
     <div class="button-wrapper mt-60 ct:mt-45 md:mt-30 ct:mx-auto">
      <a href="projeler/1.html" title="İlanlarımız" class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 w-fit primary bg-viking before:bg-gothic px-30 space-x-30 w-full rounded-100 h-60 ct:h-50 flex justify-between">
-        <div class="text relative z-2 backface-hidden shrink-0 duration-450 text-18 ct:text-16 text-woodsmoke">İlanlarımızı İncele</div>
+        <div class="text relative z-2 backface-hidden shrink-0 duration-450 text-18 ct:text-16 text-woodsmoke">Hizmet Detayları</div>
         <div class="icon relative z-2 backface-hidden shrink-0 duration-450 text-14 text-woodsmoke"><span class="icon-el icon-arrow-short-to-right leading-0 block"></span></div>
       </a>
     </div>
@@ -243,14 +311,14 @@ a:hover {
   </div>
   <div class="content lg:container mx-auto px-30 relative z-2 h-full flex flex-col justify-center">
     <div data-swiper-parallax-x="25%" data-swiper-parallax-opacity="0" class="title ct:mx-auto ct:text-center ct:max-w-750 text-68 ct:text-48 lg:text-42 md:text-36 sm:text-30 xs:text-25 text-white leading-tighter">
-      Geleceğe değer<br><strong> katan yatırımlar.</strong>
+      İhtiyacınıza Uygun Nitelikli<br><strong> Personel Temini</strong>
     </div>
     <div class="subtitle text-white text-20 md:text-18 sm:text-16 opacity-70 mt-20 max-w-520 ct:text-center ct:mx-auto">
-      İmarlı, yatırım potansiyeli yüksek arsalar.
+      Farklı sektörlere uygun, eğitimli ve güvenilir personelleri işletmenizle buluşturarak iş gücünüzü güçlendiriyoruz.
     </div>
     <div class="button-wrapper mt-60 ct:mt-45 md:mt-30 ct:mx-auto">
      <a href="projeler/1.html" title="İlanlarımız" class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 w-fit primary bg-viking before:bg-gothic px-30 space-x-30 w-full rounded-100 h-60 ct:h-50 flex justify-between">
-        <div class="text relative z-2 backface-hidden shrink-0 duration-450 text-18 ct:text-16 text-woodsmoke">İlanlarımızı İncele</div>
+        <div class="text relative z-2 backface-hidden shrink-0 duration-450 text-18 ct:text-16 text-woodsmoke">Personel Çözümleri</div>
         <div class="icon relative z-2 backface-hidden shrink-0 duration-450 text-14 text-woodsmoke"><span class="icon-el icon-arrow-short-to-right leading-0 block"></span></div>
       </a>
     </div>
@@ -263,39 +331,21 @@ a:hover {
   </div>
   <div class="content lg:container mx-auto px-30 relative z-2 h-full flex flex-col justify-center">
     <div data-swiper-parallax-x="25%" data-swiper-parallax-opacity="0" class="title ct:mx-auto ct:text-center ct:max-w-750 text-68 ct:text-48 lg:text-42 md:text-36 sm:text-30 xs:text-25 text-white leading-tighter">
-      Size en uygun evi<br><strong> birlikte bulalım.</strong>
+      Profesyonel Dezenfekte ve<br><strong> Hijyen Uygulamaları</strong>
     </div>
     <div class="subtitle text-white text-20 md:text-18 sm:text-16 opacity-70 mt-20 max-w-520 ct:text-center ct:mx-auto">
-      Satılık ve kiralık seçkin İlanlarımız
+      Modern ekipmanlar ve etkili uygulama yöntemleriyle yaşam ve çalışma alanlarınızda maksimum hijyen sağlıyoruz.
     </div>
     <div class="button-wrapper mt-60 ct:mt-45 md:mt-30 ct:mx-auto">
       <a href="projeler/1.html" title="İlanlarımız" class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 w-fit primary bg-viking before:bg-gothic px-30 space-x-30 w-full rounded-100 h-60 ct:h-50 flex justify-between">
-        <div class="text relative z-2 backface-hidden shrink-0 duration-450 text-18 ct:text-16 text-woodsmoke">İlanlarımız</div>
+        <div class="text relative z-2 backface-hidden shrink-0 duration-450 text-18 ct:text-16 text-woodsmoke">Hizmeti İncele</div>
         <div class="icon relative z-2 backface-hidden shrink-0 duration-450 text-14 text-woodsmoke"><span class="icon-el icon-arrow-short-to-right leading-0 block"></span></div>
       </a>
     </div>
   </div>
 </div>
 
-<div class="swiper-slide h-full relative overflow-hidden">
-  <div class="image absolute w-full left-0 bottom-0 opacity-80 ct:opacity-60 pointer-events-none h-full">
-    <img src="assets/image/slide/slide6.png" alt="Gayrimenkulde güvenin yeni adresi." data-swiper-parallax-y="50%" class="block w-full h-full object-cover object-center">
-  </div>
-  <div class="content lg:container mx-auto px-30 relative z-2 h-full flex flex-col justify-center">
-    <div data-swiper-parallax-x="25%" data-swiper-parallax-opacity="0" class="title ct:mx-auto ct:text-center ct:max-w-750 text-68 ct:text-48 lg:text-42 md:text-36 sm:text-30 xs:text-25 text-white leading-tighter">
-      Gayrimenkulde güvenin<br><strong> yeni adresi.</strong>
-    </div>
-    <div class="subtitle text-white text-20 md:text-18 sm:text-16 opacity-70 mt-20 max-w-520 ct:text-center ct:mx-auto">
-      Doğru yatırım, doğru danışmanlık, doğru sonuç.
-    </div>
-    <div class="button-wrapper mt-60 ct:mt-45 md:mt-30 ct:mx-auto">
-      <a href="iletisim/index.html" title="Bize Ulaşın" class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 w-fit primary bg-viking before:bg-gothic px-30 space-x-30 w-full rounded-100 h-60 ct:h-50 flex justify-between">
-        <div class="text relative z-2 backface-hidden shrink-0 duration-450 text-18 ct:text-16 text-woodsmoke">Bize Ulaşın</div>
-        <div class="icon relative z-2 backface-hidden shrink-0 duration-450 text-14 text-woodsmoke"><span class="icon-el icon-arrow-short-to-right leading-0 block"></span></div>
-      </a>
-    </div>
-  </div>
-</div>
+
       </div>
     </div>
     <div class="hero-thumbs">
@@ -309,8 +359,7 @@ a:hover {
                   class="item py-25 ct:py-20 px-20 ct:px-15 text-white leading-tight flex cursor-pointer space-x-15 ct:space-x-10">
                   <div class="number text-18 ct:text-16 font-medium">01</div>
                   <div class="text">
-<div class="name mb-5 text-20 ct:text-18 lg:text-16">Prestij Konutları</div>
-<div class="category lg:text-14">Seçkin Projeler</div>
+<div class="name mb-5 text-20 ct:text-18 lg:text-16">Güvenliğin Güvencesi</div>
                   </div>
                 </div>
               </div>
@@ -321,8 +370,7 @@ a:hover {
                   <div class="number text-18 ct:text-16 font-medium">02</div>
                   <div class="text">
 
-<div class="name mb-5 text-20 ct:text-18 lg:text-16">Villa Projeleri</div>
-<div class="category lg:text-14">Özel Yaşam Alanları</div>
+<div class="name mb-5 text-20 ct:text-18 lg:text-16">Profesyonel Özel Güvenlik Hizmetleri</div>
                   </div>
                 </div>
               </div>
@@ -332,8 +380,7 @@ a:hover {
                   class="item py-25 ct:py-20 px-20 ct:px-15 text-white leading-tight flex cursor-pointer space-x-15 ct:space-x-10">
                   <div class="number text-18 ct:text-16 font-medium">03</div>
                   <div class="text">
-<div class="name mb-5 text-20 ct:text-18 lg:text-16">Ticari Gayrimenkul</div>
-<div class="category lg:text-14">Ofis & Mağaza</div>
+<div class="name mb-5 text-20 ct:text-18 lg:text-16">Profesyonel Temizlik Çözümleri</div>
                   </div>
                 </div>
               </div>
@@ -343,8 +390,7 @@ a:hover {
                   class="item py-25 ct:py-20 px-20 ct:px-15 text-white leading-tight flex cursor-pointer space-x-15 ct:space-x-10">
                   <div class="number text-18 ct:text-16 font-medium">04</div>
                   <div class="text">
-<div class="name mb-5 text-20 ct:text-18 lg:text-16">Arsa Yatırımı</div>
-<div class="category lg:text-14">Yatırım Fırsatları</div>
+<div class="name mb-5 text-20 ct:text-18 lg:text-16">Nitelikli Personel Temini</div>
                   </div>
                 </div>
               </div>
@@ -354,22 +400,11 @@ a:hover {
                   class="item py-25 ct:py-20 px-20 ct:px-15 text-white leading-tight flex cursor-pointer space-x-15 ct:space-x-10">
                   <div class="number text-18 ct:text-16 font-medium">05</div>
                   <div class="text">
-<div class="name mb-5 text-20 ct:text-18 lg:text-16">Satılık & Kiralık</div>
-<div class="category lg:text-14">İlanlarımız</div>
+<div class="name mb-5 text-20 ct:text-18 lg:text-16">Dezenfekte ve Hijyen Uygulamaları</div>
                   </div>
                 </div>
               </div>
 
-              <div class="swiper-slide">
-                <div
-                  class="item py-25 ct:py-20 px-20 ct:px-15 text-white leading-tight flex cursor-pointer space-x-15 ct:space-x-10">
-                  <div class="number text-18 ct:text-16 font-medium">06</div>
-                  <div class="text">
-<div class="name mb-5 text-20 ct:text-18 lg:text-16">YEK Gayrimenkul</div>
-<div class="category lg:text-14">Güvenilir Danışmanlık</div>
-                  </div>
-                </div>
-              </div>
 
             </div>
           </div>
@@ -390,63 +425,94 @@ a:hover {
     <div class="text-content lg:container mx-auto px-30 relative z-2 mb-180 lg:mb-120 md:mb-60">
       <div class="text grid grid-cols-2 sm:grid-cols-1 gap-90 ct:gap-75 lg:gap-60 md:gap-45 sm:gap-30">
 
-        <h2
-          class="heading text-60 ct:text-42 lg:text-36 md:text-30 sm:text-26 xs:text-22 font-light text-white leading-tight">
-          Doğru yatırımın güvenilir adresi <br> YEK GAYRİMENKUL</h2>
+<h2
+  class="heading text-60 ct:text-42 lg:text-36 md:text-30 sm:text-26 xs:text-22 font-light text-white leading-tight">
+  Profesyonel Hizmetin Adresi<br>
+  <strong>İZ ÖZEL GÜVENLİK</strong>
+</h2>
         <div class="expo mt-15 lg:mt-0">
-          <p class="text-18 md:text-16 xs:text-14 text-white leading-loose opacity-30">Kent
-YEK Gayrimenkul, konut, villa, ticari gayrimenkul ve arsa yatırımlarında
-uzman kadrosuyla hizmet vermektedir.
+<p class="text-18 md:text-16 xs:text-14 text-white leading-loose opacity-60">
+  İZ Özel Güvenlik; özel güvenlik hizmetleri, profesyonel temizlik,
+  personel temini ve dezenfekte uygulamaları alanlarında işletmelere
+  kapsamlı çözümler sunmaktadır.
 
-Bölgesel piyasa bilgisi, güçlü portföy ağı ve şeffaf danışmanlık anlayışıyla
-müşterilerine sadece bir gayrimenkul değil, doğru yatırım fırsatları sunar.
+  Eğitimli ve deneyimli kadromuzla tesislerinizi, çalışanlarınızı ve
+  ziyaretçilerinizi güvence altına alırken, çalışma alanlarınızda
+  hijyen ve hizmet kalitesinin sürekliliğini sağlıyoruz.
 
-Satın alma, satış ve kiralama süreçlerinin her aşamasında güvenilir çözümler
-üreterek uzun vadeli memnuniyet sağlamayı hedefler.</p>
+  İhtiyaca özel planlama, disiplinli çalışma anlayışı ve güvenilir hizmet
+  yaklaşımımızla kurumların uzun vadeli çözüm ortağı olmayı hedefliyoruz.
+</p>
 <a href="sua-hakkinda.html"
-style="
-display:inline-flex;
-align-items:center;
-padding:16px 34px;
-background:#c8101a;
-color:#fff;
-border-radius:999px;
-font-weight:600;
-text-decoration:none;
-margin-top:35px;">
-Kurumsal →
+  style="
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px 34px;
+    background:#302DB0;
+    color:#fff;
+    border-radius:999px;
+    font-weight:600;
+    text-decoration:none;
+    margin-top:35px;
+    transition:all .3s ease;
+  "
+  onmouseover="this.style.background='#25228F'; this.style.transform='translateY(-2px)'"
+  onmouseout="this.style.background='#302DB0'; this.style.transform='translateY(0)'">
+  Kurumsal →
 </a>
         </div>
 
       </div>
     </div>
 
-    <!-- projectLinks -->
-    <div class="ct:container mx-auto px-30 relative z-2 mb-90 md:mb-60 sm:mb-45">
 <!-- projectLinks -->
 <div class="ct:container mx-auto px-30 relative z-2 mb-90 md:mb-60 sm:mb-45">
   <div class="wrapper relative">
 
     <div class="animation-wrapper md:relative">
-      <div class="bg-image h-500 md:h-350 rounded-30 overflow-hidden isolate">
-        <img src="assets/image/other/manzara.png" alt="YEK Gayrimenkul Manzara"
-          class="block w-full h-full object-cover object-center">
-      </div>
+<div
+  class="bg-image h-500 md:h-350 rounded-30 overflow-hidden isolate relative"
+  style="position: relative;">
+<img
+  src="assets/image/other/hizmetlerimiz.png"
+  alt="İZ Özel Güvenlik hizmet ekibi"
+  class="block w-full h-full object-cover object-center hizmet-image">
+    style="display: block; width: 100%; height: 100%; object-fit: cover;">
 
-      <div
-        class="content absolute pl-180 ct:pl-30 top-2/6 md:top-1/2 md:translate-y-minus-1/2 text-white font-light text-36 ct:text-30 lg:text-26 md:text-22 leading-tight sm:hidden">
-        Doğru yatırım,<br>
-        güvenilir gelecek.
-      </div>
+  <div
+    style="
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 1;
+      pointer-events: none;
+    ">
+  </div>
+
+</div>
+
+<div
+  class="content absolute pl-180 ct:pl-30 top-2/6 md:top-1/2 md:translate-y-minus-1/2 text-white font-light text-36 ct:text-30 lg:text-26 md:text-22 leading-tight sm:hidden">
+  Profesyonel hizmet,<br>
+  güvenli yarınlar.
+</div>
     </div>
 
-    <a href="projeler/1.html" title="İlanlarımızı Gör"
-      class="absolute md:relative left-150 ct:left-30 md:left-0 bottom-0 md:bottom-auto translate-y-2/6 md:translate-y-1 md:mt-30 project-card bg-viking rounded-20 p-30 max-w-300 md:max-w-none h-250 w-full flex flex-col justify-between">
-      <span class="text-24 text-white leading-tight">İlanlarımızı<br>
-        Gör</span>
-      <span
-        class="icon icon-arrow-short-to-right text-40 leading-0 text-white block duration-300 relative z-2"></span>
-    </a>
+<a href="hizmetlerimiz.html" title="Hizmetlerimizi İnceleyin"
+  class="absolute md:relative left-150 ct:left-30 md:left-0 bottom-0 md:bottom-auto translate-y-2/6 md:translate-y-1 md:mt-30 project-card bg-viking rounded-20 p-30 max-w-300 md:max-w-none h-250 w-full flex flex-col justify-between">
+
+  <span class="text-24 text-white leading-tight">
+    Hizmetlerimizi<br>
+    İnceleyin
+  </span>
+
+  <span
+    class="icon icon-arrow-short-to-right text-40 leading-0 text-white block duration-300 relative z-2">
+  </span>
+</a>
 
   </div>
 </div>
@@ -464,68 +530,79 @@ Kurumsal →
       <img class="block w-full h-full object-cover object-center" src="assets/image/other/image-2.jpg" alt="Texture">
     </div>
     <div class="content lg:container mx-auto px-30 relative z-2">
-<div class="zecorner-partnership text-center mb-90 ct:mb-75 lg:mb-60 md:mb-45">
+<div class="zecorner-partnership text-center mb-120">
 
-  <div class="zecorner-logo-wrap mb-35">
-    <img src="assets/image/logo/zecornerLogo.png" 
-         alt="Zecorner" 
-         class="zecorner-logo mx-auto">
-  </div>
 
-  <div class="text-18 md:text-16 sm:text-14 text-white opacity-60 tracking-widest mb-30">
-    YEK GAYRİMENKUL <span style="color:#e73333;">x</span> ZECORNER
-  </div>
 
-  <div
-    class="heading text-60 ct:text-48 lg:text-40 md:text-32 sm:text-26 xs:text-20 text-white font-light leading-tight text-center mb-25">
-    Zecorner iş birliğiyle<br>
-    premium yaşam alanları sunuyoruz.
-  </div>
+<div
+  class="heading text-60 ct:text-48 lg:text-40 md:text-32 sm:text-26 xs:text-20 text-white font-light leading-tight text-center mb-25">
+  Güvenliğiniz için eğitimli,<br>
+  profesyonel ve güçlü bir kadro
+</div>
 
-  <div class="text-20 md:text-18 sm:text-16 text-white opacity-60 leading-loose max-w-900 mx-auto">
-    Zecorner’in modüler ve prefabrik yapı çözümleriyle; modern, sürdürülebilir
-    ve yüksek kaliteli yaşam alanlarını müşterilerimizle buluşturuyoruz.
-  </div>
+<div class="text-20 md:text-18 sm:text-16 text-white opacity-60 leading-loose max-w-900 mx-auto">
+  Eğitimli özel güvenlik personelimiz, disiplinli çalışma anlayışımız ve
+  ihtiyaca özel güvenlik planlarımızla işletmelerinizi, çalışanlarınızı
+  ve ziyaretçilerinizi 7 gün 24 saat koruma altına alıyoruz.
+</div>
 
 </div>
-      <div
-        class="info flex justify-between md:items-center md:flex-col space-x-45 md:space-x-0 md:space-y-30 mb-120 ct:mb-90 lg:mb-60 md:mb-60">
+   
+<div class="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-1 gap-50 mt-80">
 
-        <div class="item max-w-400">
-          <div
-            class="number counter text-center text-white text-60 ct:text-48 lg:text-42 md:text-36 sm:text-30 xs:text-26 font-medium leading-none mb-10">
-            15+</div>
-          <div class="title text-24 lg:text-20 md:text-18 sm:text-16 text-white leading-tight text-center">
-            Yılı Aşan Tecrübe</div>
-          <div class="line my-30 lg:my-20 sm:my-15 h-1 w-full bg-white opacity-30"></div>
-          <div class="expo text-center text-white px-30 leading-loose opacity-50">Gayrimenkul
-            sektöründe 2010 yılından bu yana yaşama değer katan yapılara imza atıyoruz.</div>
+    <div class="text-center">
+        <div class="text-white text-70 font-bold leading-none">
+            7/24
         </div>
 
-        <div class="item max-w-400">
-          <div
-            class="number counter text-center text-white text-60 ct:text-48 lg:text-42 md:text-36 sm:text-30 xs:text-26 font-medium leading-none mb-10">
-            50+</div>
-          <div class="title text-24 lg:text-20 md:text-18 sm:text-16 text-white leading-tight text-center">
-            İlan</div>
-          <div class="line my-30 lg:my-20 sm:my-15 h-1 w-full bg-white opacity-30"></div>
-          <div class="expo text-center text-white px-30 leading-loose opacity-50">Onlarca ilanla hayallerinizdeki evlere kavuşun</div>
-        </div>
+        <h3 class="text-white text-26 mt-20 mb-20">
+            Kesintisiz Güvenlik
+        </h3>
 
-        <div class="item max-w-400">
-          <div
-            class="number counter text-center text-white text-60 ct:text-48 lg:text-42 md:text-36 sm:text-30 xs:text-26 font-medium leading-none mb-10">
-            5000+</div>
-          <div class="title text-24 lg:text-20 md:text-18 sm:text-16 text-white leading-tight text-center">
-            Memnun Müşteri</div>
-          <div class="line my-30 lg:my-20 sm:my-15 h-1 w-full bg-white opacity-30"></div>
-          <div class="expo text-center text-white px-30 leading-loose opacity-50">5000´den fazla
-            ailenin bir parçası olmaktan gurur duyuyoruz.</div>
-        </div>
+        <div class="w-80 h-1 bg-white opacity-30 mx-auto mb-20"></div>
 
-      </div>
-
+        <p class="text-white opacity-60 leading-loose">
+            Tesislerinizi, çalışanlarınızı ve ziyaretçilerinizi günün her saatinde
+            profesyonel güvenlik ekiplerimizle koruyoruz.
+        </p>
     </div>
+
+    <div class="text-center">
+        <div class="text-white text-70 font-bold leading-none">
+            4
+        </div>
+
+        <h3 class="text-white text-26 mt-20 mb-20">
+            Hizmet Alanı
+        </h3>
+
+        <div class="w-80 h-1 bg-white opacity-30 mx-auto mb-20"></div>
+
+        <p class="text-white opacity-60 leading-loose">
+            Özel güvenlik, temizlik, personel temini ve dezenfekte
+            uygulamalarında profesyonel çözümler sunuyoruz.
+        </p>
+    </div>
+
+    <div class="text-center">
+        <div class="text-white text-70 font-bold leading-none">
+            %100
+        </div>
+
+        <h3 class="text-white text-26 mt-20 mb-20">
+            Hizmet Odaklı
+        </h3>
+
+        <div class="w-80 h-1 bg-white opacity-30 mx-auto mb-20"></div>
+
+        <p class="text-white opacity-60 leading-loose">
+            Kaliteli hizmet, düzenli denetim ve müşteri memnuniyetini
+            ön planda tutan çalışma anlayışıyla hareket ediyoruz.
+        </p>
+    </div>
+
+</div>
+
   </section>
 
 
@@ -576,16 +653,13 @@ Kurumsal →
     <span class="icon icon-arrow-to-right text-18 leading-0 text-woodsmoke block duration-300 relative z-2"></span>
 </a>
 
-<a href="projeler/1.html" title="İlanlarımız"
+<a href="projeler/1.html" title="Hizmetlerimiz"
     class="item block text-woodsmoke font-light flex items-center space-x-10">
-    <span>İlanlarımız</span>
+    <span>Hizmetlerimiz</span>
     <span class="icon icon-arrow-to-right text-18 leading-0 text-woodsmoke block duration-300 relative z-2"></span>
 </a>
 
-<a href="projeler/2.html" title="Zecorner"
-     class="item block text-woodsmoke font-light flex items-center space-x-10">
-    <span>Zecorner İş Birliği</span>
- </a>   
+  
 
 <a href="iletisim/index.html" title="İletişim"
     class="item block text-woodsmoke font-light flex items-center space-x-10">
@@ -600,59 +674,35 @@ Kurumsal →
                 <div class="group md:max-w-300 xs:max-w-none md:w-full">
                     <div class="menu text-16 leading-tight space-y-25">
 
-<a href="projeler/1.html" title="Satılık İlanlar"
+<a href="projeler/1.html" title="Özel Güvenlik Hizmetleri"
     class="item block text-woodsmoke flex items-center">
-    <span>Satılık İlanlar</span>
+    <span>Özel Güvenlik Hizmetleri</span>
     <span class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2"></span>
 </a>
 
-<a href="projeler/1.html" title="Kiralık İlanlar"
+<a href="projeler/1.html" title="Temizlik Hizmetleri"
     class="item block text-woodsmoke flex items-center">
-    <span>Kiralık İlanlar</span>
+    <span>Temizlik Hizmetleri</span>
     <span class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2"></span>
 </a>
 
-<a href="projeler/1.html" title="Ticari Gayrimenkul"
+<a href="projeler/1.html" title="İK/Personel Temini"
     class="item block text-woodsmoke flex items-center">
-    <span>Ticari Gayrimenkul</span>
+    <span>İK/Personel Temini</span>
     <span class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2"></span>
 </a>
 
-<a href="projeler/1.html" title="Arsalar"
+<a href="projeler/1.html" title="Dezenfekte Uygulamaları"
     class="item block text-woodsmoke flex items-center">
-    <span>Arsalar</span>
+    <span>Dezenfekte Uygulamaları</span>
     <span class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2"></span>
 </a>
 
-<a href="projeler/2.html" title="Zecorner"
-    class="item block text-woodsmoke flex items-center">
-    <span>Zecorner İş Birliği</span>
-    <span class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2"></span>
-</a>
 
                     </div>
                 </div>
 
-                <!-- contracts -->
-                <div class="group md:max-w-300 xs:max-w-none md:w-full">
-                    <div class="menu text-14 leading-tight space-y-20">
 
-                    </div>
-                    <a href="tel:4449782" title="Çağrı Merkezi" class="call flex items-center space-x-15 mt-30">
-                        <div
-                            class="icon-wrapper w-45 h-45 rounded-full bg-white flex justify-center items-center shrink-0">
-                            <span
-                                class="icon icon-phone text-18 leading-0 text-white block duration-300 relative z-2"></span>
-                        </div>
-                        <div class="text">
-                            <div class="title text-white text-14 leading-none mb-5">Çağrı Merkezi</div>
-                            <div
-                                class="number leading-none tracking-tighter text-white font-bold text-24 duration-350">
-                                444 0 000
-                            </div>
-                        </div>
-                    </a>
-                </div>
 
                 <!-- scroolTop -->
                 <div class="group md:mx-auto">
@@ -666,7 +716,7 @@ Kurumsal →
             </div>
         </div>
 <div class="copyright text-center text-white text-14 xs:text-12 py-20">
-    © 2026 YEK Gayrimenkul - Tüm hakları saklıdır
+    © 2026 İZ Özel Güvenlik - Tüm hakları saklıdır
 </div>
     </div>
 </footer>
@@ -744,167 +794,21 @@ Kurumsal →
             <div class="background w-full h-full absolute left-0 top-0 bg-viking opacity-90 rounded-30 lg:rounded-none">
             </div>
             <div class="lg:container mx-auto px-30 lg:h-full lg:py-30 lg:pt-0">
-                <div
-                    class="content pt-150 pb-60 px-60 lg:pt-0 md:pb-30 md:px-45 relative grid grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-90 ct:gap-60 lg:gap-45 sm:gap-30 lg:h-full lg:overflow-x-hidden lg:overflow-y-auto">
+<div
+  class="content pt-150 pb-60 px-90 lg:pt-0 md:pb-30 md:px-45 relative grid grid-cols-2 sm:grid-cols-1 gap-120 ct:gap-75 lg:gap-60 sm:gap-45 items-center lg:h-full lg:overflow-x-hidden lg:overflow-y-auto">
 
-                    <!-- swiperProjects -->
-                    <div class="project-map-carousel swiper overflow-visible w-full lg:hidden">
-                        <div class="swiper-wrapper">
 
-                            <div class="swiper-slide">
-                                <div class="project-map-el max-w-325 rounded-30 overflow-hidden isolate">
-                                    <div class="image-field h-250 relative">
-                                        <div class="image absolute w-full h-full left-0 top-0 bg-woodsmoke">
-                                            <img src="uploads/genelresim/b_elite-istanbul-5072.jpg" alt="Kuzey Adalar"
-                                                class="block w-full h-full object-cover object-center opacity-80">
-                                        </div>
-                                        <div class="location absolute bottom-0 left-0 w-full py-20 px-30 pr-60 z-2">
-                                            <span
-                                                class="icon icon-pin text-22 leading-0 text-white block duration-300 relative z-2 mb-5"></span>
-                                            <span class="text-16 font-light text-white leading-tight">Kartal
-                                                / İstanbul</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-field bg-white p-30 relative">
-                                        <a href="planlanan-projeler/elite-istanbul.html" title="Kuzey Adalar"
-                                            class="image-gallery block w-55 h-55 rounded-full flex justify-center items-center duration-350 bg-viking hover:bg-gothic">
-                                            <span
-                                                class="icon icon-image text-24 leading-0 text-white block duration-300 relative z-2"></span>
-                                        </a>
-<div class="title text-24 leading-tight font-medium text-woodsmoke mb-5">
-    Prestij Konut</div>
-<div class="category text-woodsmoke font-light leading-tight">
-    Satılık Daire</div>
-                                        <a href="ilan-detay.html" title="Haritayı Gör"
-                                            class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 mt-45 black bg-woodsmoke before:bg-black px-30 w-fit rounded-100 h-40 flex">
-                                            <div
-                                                class="text relative z-2 backface-hidden shrink-0 duration-450 text-14 text-white font-medium">
-                                                İlanı Gör
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="project-map-el max-w-325 rounded-30 overflow-hidden isolate">
-                                    <div class="image-field h-250 relative">
-                                        <div class="image absolute w-full h-full left-0 top-0 bg-woodsmoke">
-                                            <img src="uploads/genelresim/b_elite-quatro-6852.jpg" alt="Elite Erenköy"
-                                                class="block w-full h-full object-cover object-center opacity-80">
-                                        </div>
-                                        <div class="location absolute bottom-0 left-0 w-full py-20 px-30 pr-60 z-2">
-                                            <span
-                                                class="icon icon-pin text-22 leading-0 text-white block duration-300 relative z-2 mb-5"></span>
-                                            <span class="text-16 font-light text-white leading-tight">Erenköy
-                                                / İstanbul</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-field bg-white p-30 relative">
-                                        <a href="devam-eden-projeler/elite-erenkoy.html" title="Elite Erenköy"
-                                            class="image-gallery block w-55 h-55 rounded-full flex justify-center items-center duration-350 bg-viking hover:bg-gothic">
-                                            <span
-                                                class="icon icon-image text-24 leading-0 text-white block duration-300 relative z-2"></span>
-                                        </a>
-                                        <div class="title text-24 leading-tight font-medium text-woodsmoke mb-5">
-                                            Elite Erenköy</div>
-                                        <div class="category text-woodsmoke font-light leading-tight">
-                                            Devam Eden Projeler</div>
-                                        <a href="devam-eden-projeler/elite-erenkoy.html#location" title="Haritayı Gör"
-                                            class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 mt-45 black bg-woodsmoke before:bg-black px-30 w-fit rounded-100 h-40 flex">
-                                            <div
-                                                class="text relative z-2 backface-hidden shrink-0 duration-450 text-14 text-white font-medium">
-                                                Haritayı gör
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="project-map-el max-w-325 rounded-30 overflow-hidden isolate">
-                                    <div class="image-field h-250 relative">
-                                        <div class="image absolute w-full h-full left-0 top-0 bg-woodsmoke">
-                                            <img src="uploads/genelresim/b_elite-suits-4382.jpg" alt="Elite Suits"
-                                                class="block w-full h-full object-cover object-center opacity-80">
-                                        </div>
-                                        <div class="location absolute bottom-0 left-0 w-full py-20 px-30 pr-60 z-2">
-                                            <span
-                                                class="icon icon-pin text-22 leading-0 text-white block duration-300 relative z-2 mb-5"></span>
-                                            <span class="text-16 font-light text-white leading-tight">Çekmeköy
-                                                - İstanbul</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-field bg-white p-30 relative">
-                                        <a href="devam-eden-projeler/elite-suits.html" title="Elite Suits"
-                                            class="image-gallery block w-55 h-55 rounded-full flex justify-center items-center duration-350 bg-viking hover:bg-gothic">
-                                            <span
-                                                class="icon icon-image text-24 leading-0 text-white block duration-300 relative z-2"></span>
-                                        </a>
-                                        <div class="title text-24 leading-tight font-medium text-woodsmoke mb-5">
-                                            Elite Suits</div>
-                                        <div class="category text-woodsmoke font-light leading-tight">Devam
-                                            Eden Projeler</div>
-                                        <a href="devam-eden-projeler/elite-suits.html#location" title="Haritayı Gör"
-                                            class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 mt-45 black bg-woodsmoke before:bg-black px-30 w-fit rounded-100 h-40 flex">
-                                            <div
-                                                class="text relative z-2 backface-hidden shrink-0 duration-450 text-14 text-white font-medium">
-                                                Haritayı gör
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="project-map-el max-w-325 rounded-30 overflow-hidden isolate">
-                                    <div class="image-field h-250 relative">
-                                        <div class="image absolute w-full h-full left-0 top-0 bg-woodsmoke">
-                                            <img src="uploads/genelresim/b_elite-garden-2801.jpg" alt="Elite Garden"
-                                                class="block w-full h-full object-cover object-center opacity-80">
-                                        </div>
-                                        <div class="location absolute bottom-0 left-0 w-full py-20 px-30 pr-60 z-2">
-                                            <span
-                                                class="icon icon-pin text-22 leading-0 text-white block duration-300 relative z-2 mb-5"></span>
-                                            <span class="text-16 font-light text-white leading-tight">Çekmeköy
-                                                / İstanbul </span>
-                                        </div>
-                                    </div>
-                                    <div class="content-field bg-white p-30 relative">
-                                        <a href="devam-eden-projeler/elite-garden.html" title="Elite Garden"
-                                            class="image-gallery block w-55 h-55 rounded-full flex justify-center items-center duration-350 bg-viking hover:bg-gothic">
-                                            <span
-                                                class="icon icon-image text-24 leading-0 text-white block duration-300 relative z-2"></span>
-                                        </a>
-                                        <div class="title text-24 leading-tight font-medium text-woodsmoke mb-5">
-                                            Elite Garden</div>
-                                        <div class="category text-woodsmoke font-light leading-tight">Devam
-                                            Eden Projeler</div>
-                                        <a href="devam-eden-projeler/elite-garden.html#location" title="Haritayı Gör"
-                                            class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 mt-45 black bg-woodsmoke before:bg-black px-30 w-fit rounded-100 h-40 flex">
-                                            <div
-                                                class="text relative z-2 backface-hidden shrink-0 duration-450 text-14 text-white font-medium">
-                                                Haritayı gör
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
 
                     <!-- contacts -->
-                    <div class="group max-w-275 justify-self-center sm:row-start-2 sm:justify-self-end">
+<div class="group max-w-380 justify-self-start sm:row-start-2 sm:justify-self-start menu-contact-area">
 
-
-                        <div class="contacts mt-120 text-right">
+                        <div class="contacts mt-0 text-left">
                             <a href="https://maps.app.goo.gl/q4DsiaR6AHsTGCEEA" title="Adres" target="_blank"
-                                class="item block leading-tight font-light text-white mb-15">Barbaros, Halk Cd. Zecorner Plaza No:1 İç Kapı No:1, 34746 Ataşehir/İstanbul</a>
+                                class="item block leading-tight font-light text-white mb-15">Bahçe Mahallesi (Eski 4602 Sokak) 4607 Sokak No:4 Zemin:16, 33010 Akdeniz/Mersin</a>
                             <a href="tel:4449782" title="Telefon"
-                                class="item block leading-tight font-bold text-white">444 0 000</a>
+                                class="item block leading-tight font-bold text-white">0 (312) 312 00 00</a>
                         </div>
-                        <div class="button-group flex space-x-15 justify-between mt-30">
+                        <div class="button-group flex space-x-15 justify-start mt-30">
                             <a href="https://maps.app.goo.gl/q4DsiaR6AHsTGCEEA" title="Haritayı Gör" target="_blank"
                                 class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 black w-fit bg-woodsmoke px-30 w-full rounded-100 h-40 flex justify-center">
                                 <div
@@ -925,8 +829,8 @@ Kurumsal →
                     </div>
 
 <!-- mainMenu -->
-<div class="group justify-self-end sm:row-start-1 main-menu-fix">
-  <div class="menu text-42 ct:text-38 lg:text-32 md:text-28 sm:text-24 xs:text-22 leading-tight space-y-20 sm:space-y-15 translate-x-25 relative z-30">
+<div class="group justify-self-end self-start pt-20 sm:justify-self-start sm:row-start-1 main-menu-fix">
+    <div class="menu text-42 ct:text-38 lg:text-32 md:text-28 sm:text-24 xs:text-22 leading-tight space-y-20 sm:space-y-15 translate-x-25 relative z-30">
 
 <a href="sua-hakkinda.html" title="Kurumsal"
     class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
@@ -934,9 +838,9 @@ Kurumsal →
     <span class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2"></span>
 </a>
 
-<a href="projeler/1.html" title="İlanlarımız"
+<a href="projeler/1.html" title="Hizmetlerimiz"
     class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
-    <span>İlanlarımız</span>
+    <span>Hizmetlerimiz</span>
     <span class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2"></span>
 </a>
 
@@ -947,11 +851,7 @@ Kurumsal →
     <span class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2"></span>
 </a>
 
-<a href="projeler/2.html" title="Zecorner"
-    class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
-    <span>Zecorner</span>
-    <span class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2"></span>
-</a>
+
 </div>
                     </div>
 

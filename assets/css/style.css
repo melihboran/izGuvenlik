@@ -6192,3 +6192,39 @@ footer h5,
 footer h6 {
     color: #fff !important;
 }
+
+/* ANA SAYFA HEADER LOGO SON DÜZELTME */
+.header-field .logo.yek-logo-link {
+    width: 125px !important;
+    max-width: 125px !important;
+    min-width: 125px !important;
+    flex: 0 0 125px !important;
+
+    position: relative !important;
+    top: -25px !important;
+
+    display: block !important;
+}
+
+.header-field .logo.yek-logo-link img.yek-logo-header {
+    width: 125px !important;
+    max-width: 125px !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: contain !important;
+}
+
+@media (max-width: 768px) {
+    .header-field .logo.yek-logo-link {
+        width: 95px !important;
+        max-width: 95px !important;
+        min-width: 95px !important;
+        flex-basis: 95px !important;
+        top: -15px !important;
+    }
+
+    .header-field .logo.yek-logo-link img.yek-logo-header {
+        width: 95px !important;
+        max-width: 95px !important;
+    }
+}
