@@ -6,7 +6,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <!-- Page needs ================================================== -->
-<title>YEK Gayrimenkul | Doğru Yatırımın Güvenilir Adresi</title>
+<title>Hizmetlerimiz | İZ Özel Güvenlik</title>
     <meta charset="UTF-8" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="author" content="Pantone Creative" />
@@ -17,13 +17,1358 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="../index.html" />
 
-    <meta name="description"
-        content="Gelecek nesiller için sürdürülebilir yapılar inşa ediyoruz. Kent mimarisine estetik ve yaşama değer katan projeler üreten Şua İnşaat; köklü geçmişi, güçlü finansal yapısı, yüksek kalite anlayışı, yenilikçi mimari tarzı ve doğaya dost yaklaşımı ile bugüne kadar binlerce konut ve ticari üniteye imza attı.">
+<meta
+    name="description"
+    content="İZ Özel Güvenlik; özel güvenlik, profesyonel temizlik, insan kaynakları ve dezenfekte uygulamalarında kurumsal hizmet çözümleri sunar.">
     <link rel="shortcut icon" href="../uploads/genelresim/favicon-4532.png" />
 
     <!-- Page needs ================================================== -->
 <link rel="stylesheet" href="../assets/css/picarus.css" />
 <link rel="stylesheet" href="../assets/css/style.css" />
+
+<style>
+:root {
+    --iz-primary: #302DB0;
+    --iz-primary-dark: #131169;
+}
+
+/* Menü ve footer ana rengi */
+.bg-viking,
+.menu-popup .background,
+.search-popup .background,
+.quote-popup .background,
+.footer-field .bg-viking,
+.project-map-el .image-gallery {
+    background: var(--iz-primary) !important;
+    background-color: var(--iz-primary) !important;
+}
+
+/* Menü arka planı */
+.menu-popup .background {
+    background: var(--iz-primary) !important;
+    opacity: 0.96 !important;
+}
+
+/* Footer arka planı */
+.footer-field .bg-viking {
+    background: var(--iz-primary) !important;
+}
+
+/* Footer üzerindeki eski dekorları kaldır */
+.footer-field::before,
+.footer-field::after,
+.footer-field .bg-viking::before,
+.footer-field .bg-viking::after {
+    display: none !important;
+}
+
+/* Masaüstü menü konumu */
+.menu-popup .main-menu-fix {
+    align-self: center !important;
+    position: relative !important;
+    top: -40px !important;
+}
+
+/* Mobil menü */
+@media screen and (max-width: 767px) {
+    .menu-popup .content {
+        align-items: flex-start !important;
+    }
+
+    .menu-popup .menu-contact-area,
+    .menu-popup .main-menu-fix {
+        justify-self: start !important;
+        width: 100% !important;
+    }
+
+    .menu-popup .contacts {
+        margin-top: 0 !important;
+        text-align: left !important;
+    }
+
+    .menu-popup .button-group {
+        justify-content: flex-start !important;
+    }
+
+    .menu-popup .main-menu-fix {
+        top: 0 !important;
+    }
+}
+</style>
+
+<style>
+    :root {
+        --iz-primary: #302DB0;
+        --iz-primary-hover: #25228F;
+        --iz-deep-blue: #0B0E59;
+        --iz-card-title: #121750;
+        --iz-text-muted: #62677D;
+        --iz-page-background: #F6F7FB;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: var(--iz-page-background);
+    }
+
+    /*
+    ==========================================
+    HİZMETLER HERO
+    ==========================================
+    */
+
+    .services-hero {
+        position: relative;
+        min-height: 670px;
+        overflow: hidden;
+        background: var(--iz-deep-blue);
+    }
+
+    .services-hero-background {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+
+    .services-hero-background img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .services-hero-content {
+        position: relative;
+        z-index: 3;
+        min-height: 670px;
+        display: flex;
+        align-items: center;
+        padding-top: 125px;
+        padding-bottom: 135px;
+    }
+
+    .services-hero-copy {
+        width: 47%;
+        max-width: 650px;
+    }
+
+    .services-hero-title {
+        margin: 0;
+        color: #fff;
+        font-size: clamp(48px, 4.8vw, 74px);
+        font-weight: 700;
+        line-height: 1.05;
+        letter-spacing: -0.045em;
+    }
+
+    .services-hero-description {
+        max-width: 610px;
+        margin-top: 25px;
+        color: rgba(255, 255, 255, 0.84);
+        font-size: 18px;
+        line-height: 1.75;
+    }
+
+    .services-hero-actions {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-top: 35px;
+    }
+
+    .services-hero-button {
+        min-width: 215px;
+        height: 56px;
+        padding: 0 27px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        border: 1px solid transparent;
+        border-radius: 999px;
+        color: #fff !important;
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        transition:
+            transform 0.3s ease,
+            background-color 0.3s ease,
+            border-color 0.3s ease;
+    }
+
+    .services-hero-button:hover {
+        color: #fff !important;
+        transform: translateY(-3px);
+    }
+
+    .services-hero-button-primary {
+        background: var(--iz-primary);
+        border-color: var(--iz-primary);
+    }
+
+    .services-hero-button-primary:hover {
+        background: var(--iz-primary-hover);
+        border-color: var(--iz-primary-hover);
+    }
+
+    .services-hero-button-outline {
+        background: rgba(255, 255, 255, 0.03);
+        border-color: rgba(255, 255, 255, 0.82);
+    }
+
+    .services-hero-button-outline:hover {
+        background: rgba(255, 255, 255, 0.13);
+        border-color: #fff;
+    }
+
+    .services-hero-button-icon {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    /*
+    ==========================================
+    DÖRT ANA HİZMET KARTI
+    ==========================================
+    */
+
+    .main-services {
+        position: relative;
+        z-index: 10;
+        margin-top: -106px;
+        padding-bottom: 70px;
+    }
+
+    .main-services-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .main-service-card {
+        min-height: 290px;
+        padding: 26px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(18, 23, 80, 0.08);
+        border-radius: 17px;
+        background: #fff;
+        color: var(--iz-card-title) !important;
+        text-decoration: none;
+        box-shadow:
+            0 22px 60px rgba(13, 22, 87, 0.09),
+            0 4px 14px rgba(13, 22, 87, 0.04);
+        transition:
+            transform 0.35s ease,
+            box-shadow 0.35s ease;
+    }
+
+    .main-service-card:hover {
+        color: var(--iz-card-title) !important;
+        transform: translateY(-8px);
+        box-shadow:
+            0 30px 75px rgba(13, 22, 87, 0.15),
+            0 7px 20px rgba(13, 22, 87, 0.06);
+    }
+
+    .main-service-card-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-service-icon {
+        width: 70px;
+        height: 70px;
+        flex: 0 0 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background:
+            linear-gradient(
+                145deg,
+                #111A71,
+                #302DB0
+            );
+        color: #fff;
+    }
+
+    .main-service-icon svg {
+        width: 34px;
+        height: 34px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .main-service-number {
+        color: #2440D8;
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    .main-service-card h2 {
+        margin: 0;
+        color: var(--iz-card-title);
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 1.15;
+    }
+
+    .main-service-card h2 span {
+        display: block;
+    }
+
+    .main-service-card p {
+        margin-top: 15px;
+        color: var(--iz-text-muted);
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .main-service-card-link {
+        margin-top: auto;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #2440D8;
+        font-size: 13px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .main-service-card-link span {
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .main-service-card:hover .main-service-card-link span {
+        transform: translateX(5px);
+    }
+
+    /*
+    ==========================================
+    HİZMET SÜRECİ
+    ==========================================
+    */
+
+    .service-process {
+        padding: 35px 0 110px;
+        background:
+            linear-gradient(
+                180deg,
+                #F6F7FB,
+                #FFFFFF
+            );
+    }
+
+    .service-process-heading {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+        gap: 60px;
+        margin-bottom: 45px;
+    }
+
+    .service-process-label {
+        margin-bottom: 12px;
+        color: #2440D8;
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .service-process-title {
+        margin: 0;
+        color: var(--iz-card-title);
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 1.15;
+    }
+
+    .service-process-intro {
+        color: #474D69;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .service-process-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        border: 1px solid rgba(36, 64, 216, 0.13);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.7);
+        overflow: hidden;
+    }
+
+    .service-process-item {
+        position: relative;
+        min-height: 190px;
+        padding: 30px 25px;
+        border-right: 1px solid rgba(36, 64, 216, 0.1);
+    }
+
+    .service-process-item:last-child {
+        border-right: 0;
+    }
+
+    .service-process-item-number {
+        margin-bottom: 13px;
+        color: #2440D8;
+        font-size: 13px;
+        font-weight: 800;
+    }
+
+    .service-process-item h3 {
+        margin: 0;
+        color: var(--iz-card-title);
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .service-process-item p {
+        margin-top: 13px;
+        color: var(--iz-text-muted);
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    /*
+    ==========================================
+    TABLET
+    ==========================================
+    */
+
+    @media screen and (max-width: 1100px) {
+        .services-hero-copy {
+            width: 52%;
+        }
+
+        .main-services-grid,
+        .service-process-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .service-process-item:nth-child(2) {
+            border-right: 0;
+        }
+
+        .service-process-item:nth-child(-n + 2) {
+            border-bottom: 1px solid rgba(36, 64, 216, 0.1);
+        }
+    }
+
+    /*
+    ==========================================
+    MOBİL
+    ==========================================
+    */
+
+    @media screen and (max-width: 767px) {
+        .services-hero {
+            min-height: 730px;
+        }
+
+        .services-hero-background img {
+            object-fit: cover;
+            object-position: 67% center;
+        }
+
+        .services-hero-background::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(10, 12, 83, 0.08) 0%,
+                    rgba(10, 12, 83, 0.5) 38%,
+                    rgba(10, 12, 83, 0.98) 74%
+                );
+        }
+
+        .services-hero-content {
+            min-height: 730px;
+            align-items: flex-end;
+            padding-top: 130px;
+            padding-bottom: 145px;
+        }
+
+        .services-hero-copy {
+            width: 100%;
+            max-width: none;
+        }
+
+        .services-hero-title {
+            font-size: 39px;
+        }
+
+        .services-hero-description {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.65;
+        }
+
+        .services-hero-actions {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 11px;
+            margin-top: 28px;
+        }
+
+        .services-hero-button {
+            width: 100%;
+            min-width: 0;
+        }
+
+        .main-services {
+            margin-top: -92px;
+        }
+
+        .main-services-grid,
+        .service-process-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .main-service-card {
+            min-height: 280px;
+        }
+
+        .service-process {
+            padding-top: 20px;
+            padding-bottom: 75px;
+        }
+
+        .service-process-heading {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .service-process-title {
+            font-size: 31px;
+        }
+
+        .service-process-item {
+            border-right: 0;
+            border-bottom: 1px solid rgba(36, 64, 216, 0.1);
+        }
+
+        .service-process-item:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    /*
+==========================================
+HİZMET DETAY MODALI
+==========================================
+*/
+
+body.iz-modal-open {
+    overflow: hidden;
+}
+
+.iz-service-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.iz-service-modal.is-open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.iz-service-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 7, 42, 0.78);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.iz-service-modal-dialog {
+    position: relative;
+    z-index: 2;
+    width: min(1280px, 100%);
+    height: min(820px, calc(100vh - 48px));
+    display: grid;
+    grid-template-columns: 330px minmax(0, 1fr);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 28px;
+    background: #fff;
+    box-shadow: 0 40px 120px rgba(4, 7, 50, 0.38);
+    transform: translateY(24px) scale(0.98);
+    transition: transform 0.35s ease;
+}
+
+.iz-service-modal.is-open .iz-service-modal-dialog {
+    transform: translateY(0) scale(1);
+}
+
+/* Sol menü */
+
+.iz-service-modal-sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 38px 28px 30px;
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(76, 92, 224, 0.42),
+            transparent 35%
+        ),
+        linear-gradient(
+            160deg,
+            #0b0e59 0%,
+            #19177d 56%,
+            #302db0 100%
+        );
+}
+
+.iz-service-modal-sidebar::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 36px solid rgba(255, 255, 255, 0.05);
+}
+
+.iz-service-modal-brand {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 32px;
+}
+
+.iz-service-modal-brand-label {
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.iz-service-modal-category {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.12;
+}
+
+.iz-service-modal-nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.iz-service-modal-nav::-webkit-scrollbar {
+    width: 4px;
+}
+
+.iz-service-modal-nav::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.iz-service-modal-tab {
+    width: 100%;
+    padding: 14px 15px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border: 1px solid transparent;
+    border-radius: 13px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.68);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: left;
+    cursor: pointer;
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.iz-service-modal-tab:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.iz-service-modal-tab.is-active {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.iz-service-modal-tab-number {
+    color: rgba(255, 255, 255, 0.48);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.iz-service-modal-tab.is-active .iz-service-modal-tab-number {
+    color: #fff;
+}
+
+/* Sağ içerik */
+
+.iz-service-modal-main {
+    min-width: 0;
+    overflow-y: auto;
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #f7f8ff 100%
+        );
+}
+
+.iz-service-modal-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 82px;
+    padding: 0 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(18, 23, 80, 0.08);
+    background: rgba(255, 255, 255, 0.91);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.iz-service-modal-topbar-text {
+    color: #777c93;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.iz-service-modal-close {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    background: #eef0fa;
+    color: #121750;
+    font-family: inherit;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.iz-service-modal-close:hover {
+    color: #fff;
+    background: #302db0;
+    transform: rotate(90deg);
+}
+
+.iz-service-modal-content {
+    padding: 46px;
+}
+
+.iz-service-modal-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 245px;
+    align-items: stretch;
+    gap: 34px;
+}
+
+.iz-service-modal-eyebrow {
+    margin-bottom: 14px;
+    color: #302db0;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.iz-service-modal-title {
+    margin: 0;
+    color: #121750;
+    font-size: clamp(34px, 4vw, 54px);
+    font-weight: 700;
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+}
+
+.iz-service-modal-description {
+    max-width: 690px;
+    margin-top: 23px;
+    color: #5f647d;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.iz-service-modal-visual {
+    position: relative;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 22px;
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            rgba(114, 134, 255, 0.55),
+            transparent 34%
+        ),
+        linear-gradient(
+            145deg,
+            #101467,
+            #302db0
+        );
+}
+
+.iz-service-modal-visual::before,
+.iz-service-modal-visual::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+}
+
+.iz-service-modal-visual::before {
+    width: 210px;
+    height: 210px;
+}
+
+.iz-service-modal-visual::after {
+    width: 150px;
+    height: 150px;
+}
+
+.iz-service-modal-icon {
+    position: relative;
+    z-index: 2;
+    width: 104px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    font-size: 48px;
+    backdrop-filter: blur(8px);
+}
+
+/* Öne çıkan maddeler */
+
+.iz-service-modal-section {
+    margin-top: 40px;
+}
+
+.iz-service-modal-section-title {
+    margin: 0 0 20px;
+    color: #121750;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.iz-service-modal-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.iz-service-modal-highlight {
+    min-height: 102px;
+    padding: 18px;
+    border: 1px solid rgba(48, 45, 176, 0.1);
+    border-radius: 15px;
+    background: #fff;
+}
+
+.iz-service-modal-highlight-icon {
+    width: 29px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(48, 45, 176, 0.1);
+    color: #302db0;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.iz-service-modal-highlight p {
+    margin-top: 11px;
+    color: #40465f;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+/* Kapsam listesi */
+
+.iz-service-modal-scope {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.iz-service-modal-scope-item {
+    position: relative;
+    padding: 15px 16px 15px 45px;
+    border-radius: 13px;
+    background: rgba(48, 45, 176, 0.055);
+    color: #454a63;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.iz-service-modal-scope-item::before {
+    content: "✓";
+    position: absolute;
+    top: 14px;
+    left: 17px;
+    color: #302db0;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+/* Alt iletişim */
+
+.iz-service-modal-footer {
+    margin-top: 42px;
+    padding: 24px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border-radius: 18px;
+    background:
+        linear-gradient(
+            130deg,
+            #101467,
+            #302db0
+        );
+}
+
+.iz-service-modal-footer-text strong {
+    display: block;
+    color: #fff;
+    font-size: 17px;
+}
+
+.iz-service-modal-footer-text span {
+    display: block;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+}
+
+.iz-service-modal-contact {
+    min-width: 180px;
+    height: 48px;
+    padding: 0 21px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: #fff;
+    color: #181668 !important;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.iz-service-modal-contact:hover {
+    color: #181668 !important;
+    background: #f0f1ff;
+    transform: translateY(-2px);
+}
+
+/* Tablet */
+
+@media screen and (max-width: 1000px) {
+    .iz-service-modal-dialog {
+        grid-template-columns: 270px minmax(0, 1fr);
+    }
+
+    .iz-service-modal-content {
+        padding: 34px;
+    }
+
+    .iz-service-modal-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .iz-service-modal-visual {
+        min-height: 190px;
+    }
+
+    .iz-service-modal-highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobil */
+
+@media screen and (max-width: 767px) {
+    .iz-service-modal {
+        padding: 0;
+    }
+
+    .iz-service-modal-dialog {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(0, 1fr);
+        border-radius: 0;
+    }
+
+    .iz-service-modal-sidebar {
+        padding: 20px 20px 16px;
+    }
+
+    .iz-service-modal-brand {
+        margin-bottom: 17px;
+        padding-right: 52px;
+    }
+
+    .iz-service-modal-category {
+        font-size: 23px;
+    }
+
+    .iz-service-modal-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 5px;
+    }
+
+    .iz-service-modal-tab {
+        width: auto;
+        min-width: max-content;
+        padding: 11px 13px;
+    }
+
+    .iz-service-modal-main {
+        overflow-y: auto;
+    }
+
+    .iz-service-modal-topbar {
+        position: absolute;
+        top: 15px;
+        right: 14px;
+        height: auto;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        backdrop-filter: none;
+    }
+
+    .iz-service-modal-topbar-text {
+        display: none;
+    }
+
+    .iz-service-modal-close {
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .iz-service-modal-content {
+        padding: 30px 22px 40px;
+    }
+
+    .iz-service-modal-title {
+        font-size: 34px;
+    }
+
+    .iz-service-modal-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .iz-service-modal-visual {
+        min-height: 160px;
+    }
+
+    .iz-service-modal-highlights,
+    .iz-service-modal-scope {
+        grid-template-columns: 1fr;
+    }
+
+    .iz-service-modal-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .iz-service-modal-contact {
+        width: 100%;
+    }
+}
+
+.iz-service-modal-logo {
+    position: relative;
+    z-index: 2;
+    width: 160px;
+    max-width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+/*
+==========================================
+HİZMETLER SAYFASI ANA MENÜ
+==========================================
+*/
+
+.menu-popup .background {
+    background:
+        radial-gradient(
+            circle at 35% 45%,
+            rgba(68, 65, 210, 0.72),
+            transparent 36%
+        ),
+        linear-gradient(
+            135deg,
+            #2926a5 0%,
+            #302db0 48%,
+            #3935c2 100%
+        ) !important;
+
+    opacity: 1 !important;
+}
+
+.iz-menu-content {
+    min-height: calc(100vh - 40px);
+    padding: 40px 95px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+}
+
+/* Logo */
+
+.iz-menu-logo {
+    align-self: start;
+    justify-self: start;
+}
+
+.iz-menu-logo img {
+    display: block;
+    width: 132px;
+    height: 132px;
+    object-fit: contain;
+}
+
+/* İletişim alanı */
+
+.iz-menu-contact {
+    align-self: center;
+    justify-self: start;
+    padding-left: 95px;
+    color: #fff;
+}
+
+.iz-menu-address {
+    display: block;
+    color: rgba(255, 255, 255, 0.84) !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.35;
+    text-decoration: none;
+}
+
+.iz-menu-phone {
+    display: block;
+    margin-top: 14px;
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.iz-menu-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.iz-menu-map-button,
+.iz-menu-direction-button {
+    min-width: 142px;
+    height: 44px;
+    padding: 0 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.iz-menu-map-button {
+    color: #fff !important;
+    background: #111116;
+}
+
+.iz-menu-direction-button {
+    color: #151515 !important;
+    background: #fff;
+}
+
+.iz-menu-map-button:hover,
+.iz-menu-direction-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Sağ menü */
+
+.iz-menu-links {
+    align-self: center;
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 28px;
+    padding-right: 70px;
+}
+
+.iz-menu-links a {
+    position: relative;
+    color: #fff !important;
+    font-size: clamp(38px, 3.4vw, 55px);
+    font-weight: 700;
+    line-height: 1.05;
+    text-align: right;
+    text-decoration: none;
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+.iz-menu-links a:hover {
+    opacity: 0.72;
+    transform: translateX(-8px);
+}
+
+/* Tablet */
+
+@media screen and (max-width: 1000px) {
+    .iz-menu-content {
+        padding: 40px 55px 60px;
+    }
+
+    .iz-menu-contact {
+        padding-left: 20px;
+    }
+
+    .iz-menu-links {
+        padding-right: 10px;
+    }
+}
+
+/* Mobil */
+
+@media screen and (max-width: 767px) {
+    .iz-menu-content {
+        min-height: 100vh;
+        padding: 25px 25px 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 45px;
+        align-content: start;
+    }
+
+    .iz-menu-logo img {
+        width: 95px;
+        height: 95px;
+    }
+
+    .iz-menu-links {
+        grid-row: 2;
+        justify-self: stretch;
+        align-items: flex-start;
+        gap: 20px;
+        padding-right: 0;
+    }
+
+    .iz-menu-links a {
+        font-size: 34px;
+        text-align: left;
+    }
+
+    .iz-menu-contact {
+        grid-row: 3;
+        justify-self: stretch;
+        padding-left: 0;
+    }
+
+    .iz-menu-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .iz-menu-map-button,
+    .iz-menu-direction-button {
+        width: 100%;
+    }
+}
+
+</style>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDVV91XPSM"></script>
@@ -47,28 +1392,24 @@
             <div
                 class="wrapper lg:container mx-auto px-30 py-60 ct:py-45 lg:py-30 flex items-center justify-between relative z-2">
 <a href="../index.html"
-   title="YEK Gayrimenkul"
+   title="İZ Özel Güvenlik"
    class="logo yek-logo-link block">
 
-    <img src="../assets/image/logo/yek-logo.png"
-         alt="YEK Gayrimenkul"
-         class="yek-logo-header">
+
 
 </a>
                 <div class="tools flex items-center">
-                    <a href="tel:4449782" title="Çağrı Merkezi" class="call text-right sm:hidden">
-                        <div class="title text-white text-14 font-light leading-none mb-5">Çağrı Merkezi</div>
-                        <div class="number leading-none tracking-tighter text-white font-bold text-24 duration-350">
-                            444 0 000
-                        </div>
-                    </a>
+<a href="tel:03123120000" title="Çağrı Merkezi" class="call text-right sm:hidden">
+    <div class="title text-white text-14 font-light leading-none mb-5">
+        Çağrı Merkezi
+    </div>
 
-                    <div class="split shrink-0 mx-30 sm:mx-20 h-40 sm:h-30 w-1 bg-white opacity-30"></div>
-                    <div class="search-trigger cursor-pointer">
-                        <span
-                            class="icon icon-search text-18 leading-0 text-white block duration-300 relative z-2"></span>
-                    </div>
-                    <div class="menu-trigger cursor-pointer ml-30">
+    <div class="number leading-none tracking-tighter text-white font-bold text-24 duration-350">
+        0 (312) 312 00 00
+    </div>
+</a>
+
+<div class="menu-trigger cursor-pointer ml-30">
                         <svg class="block w-18 h-18 fill-white relative z-2" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 23 21">
                             <path
@@ -82,355 +1423,702 @@
                 </div>
             </div>
         </header>
-<main class="main-field">
 
-    <!-- pageHeader -->
+        <main class="main-field">
 
+    <!-- HERO -->
+    <section class="services-hero">
 
-    <section class="breadcrumb z-1 relative h-650 ct:h-550 lg:h-450 sm:h-auto">
-        <div class="background absolute left-0 top-0 w-full h-full pointer-events-none">
-            <div class="wrapper w-full h-full">
-                <img class="block w-full h-full object-cover object-center" src="../assets/image/source/texture.jpg"
-                    alt="Texture">
-            </div>
-<div class="image absolute h-full bottom-0 max-h-11/12 left-4/6 translate-x-minus-5/6">
-    <img
-        class="h-full w-max object-contain object-top sm:opacity-10"
-        src="../assets/image/other/ilanlarBg.png"
-        alt="İlanlar">
-</div>
+        <div class="services-hero-background">
+            <img
+                src="../assets/image/services/hizmetler-hero-bg.png"
+                alt="İZ Özel Güvenlik hizmetleri">
         </div>
-<div class="content relative z-2 h-full"></div>
+
+        <div class="services-hero-content lg:container mx-auto px-30">
+
+            <div class="services-hero-copy">
+
+                <h1 class="services-hero-title">
+                    İhtiyacınıza Özel<br>
+                    Profesyonel Hizmet<br>
+                    Çözümleri
+                </h1>
+
+                <p class="services-hero-description">
+                    Özel güvenlikten profesyonel temizliğe, personel
+                    temininden dezenfekte uygulamalarına kadar işletmenizin
+                    tüm hizmet ihtiyaçlarını tek çatı altında karşılıyoruz.
+                </p>
+
+                <div class="services-hero-actions">
+
+                    <a
+                        href="#ana-hizmetler"
+                        class="services-hero-button services-hero-button-primary">
+
+                        <span>Hizmetleri İncele</span>
+                        <span class="services-hero-button-icon">→</span>
+
+                    </a>
+
+                    <a
+                        href="tel:03123120000"
+                        class="services-hero-button services-hero-button-outline">
+
+                        <span>Bizi Arayın</span>
+                        <span class="services-hero-button-icon">☎</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
+    <!-- DÖRT ANA HİZMET -->
+    <section id="ana-hizmetler" class="main-services">
 
-    <!-- projectFilters -->
-<!-- ilanFilters -->
-<section class="ilan-filter relative z-2">
-    <div class="lg:container mx-auto px-30">
+        <div class="lg:container mx-auto px-30">
 
-        <div class="ilan-filter-head">
-            <h1>Hayalinizdeki Eve, Bir Adım Daha Yakın.</h1>
+            <div class="main-services-grid">
+
+                <!-- 01 Özel Güvenlik -->
+                <a
+    href="javascript:;"
+    class="main-service-card js-service-modal-open"
+    data-service="security"
+    aria-label="Özel Güvenlik Hizmetleri detaylarını incele">
+
+                    <div class="main-service-card-header">
+
+                        <div class="main-service-icon">
+
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M24 4 39 10v11c0 10-5.7 18.5-15 23C14.7 39.5 9 31 9 21V10l15-6Z"></path>
+                                <circle cx="24" cy="20" r="5"></circle>
+                                <path d="M16.5 33c1.5-4 4-6 7.5-6s6 2 7.5 6"></path>
+                            </svg>
+
+                        </div>
+
+                        <div class="main-service-number">
+                            01
+                        </div>
+
+                    </div>
+
+                    <h2>
+                        Özel Güvenlik
+                        <span>Hizmetleri</span>
+                    </h2>
+
+                    <p>
+                        Tesislerden yaşam alanlarına kadar profesyonel
+                        güvenlik çözümleri.
+                    </p>
+
+                    <div class="main-service-card-link">
+                        Detayları İncele
+                        <span>→</span>
+                    </div>
+
+                </a>
+
+                <!-- 02 Temizlik -->
+                <a
+    href="javascript:;"
+    class="main-service-card js-service-modal-open"
+    data-service="cleaning"
+    aria-label="Temizlik Hizmetleri detaylarını incele">
+
+                    <div class="main-service-card-header">
+
+                        <div class="main-service-icon">
+
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M12 8h8l2 6-5 3-5-3V8Z"></path>
+                                <path d="M17 17v21"></path>
+                                <path d="M10 38h14"></path>
+                                <path d="M30 17h10l-2 22h-6l-2-22Z"></path>
+                                <path d="M29 23h12"></path>
+                            </svg>
+
+                        </div>
+
+                        <div class="main-service-number">
+                            02
+                        </div>
+
+                    </div>
+
+                    <h2>
+                        Temizlik
+                        <span>Hizmetleri</span>
+                    </h2>
+
+                    <p>
+                        Hijyenik ve sağlıklı ortamlar için profesyonel
+                        temizlik çözümleri.
+                    </p>
+
+                    <div class="main-service-card-link">
+                        Detayları İncele
+                        <span>→</span>
+                    </div>
+
+                </a>
+
+                <!-- 03 İnsan Kaynakları -->
+                <a
+    href="javascript:;"
+    class="main-service-card js-service-modal-open"
+    data-service="hr"
+    aria-label="İnsan Kaynakları Hizmetleri detaylarını incele">
+
+                    <div class="main-service-card-header">
+
+                        <div class="main-service-icon">
+
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <circle cx="24" cy="16" r="6"></circle>
+                                <circle cx="10" cy="20" r="4"></circle>
+                                <circle cx="38" cy="20" r="4"></circle>
+                                <path d="M13 39c0-7 4-11 11-11s11 4 11 11"></path>
+                                <path d="M2 39c0-5 3-8 8-8 2 0 4 .5 5 1.5"></path>
+                                <path d="M46 39c0-5-3-8-8-8-2 0-4 .5-5 1.5"></path>
+                            </svg>
+
+                        </div>
+
+                        <div class="main-service-number">
+                            03
+                        </div>
+
+                    </div>
+
+                    <h2>
+                        İnsan Kaynakları
+                        <span>Hizmetleri</span>
+                    </h2>
+
+                    <p>
+                        Doğru personel ve doğru çözümlerle iş gücünüze
+                        değer katıyoruz.
+                    </p>
+
+                    <div class="main-service-card-link">
+                        Detayları İncele
+                        <span>→</span>
+                    </div>
+
+                </a>
+
+                <!-- 04 Dezenfekte -->
+                <a
+    href="javascript:;"
+    class="main-service-card js-service-modal-open"
+    data-service="disinfection"
+    aria-label="Dezenfekte Uygulamaları detaylarını incele">
+
+                    <div class="main-service-card-header">
+
+                        <div class="main-service-icon">
+
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M19 17h15l4 6v19H15V23l4-6Z"></path>
+                                <path d="M22 17V9h9"></path>
+                                <path d="M30 9h8"></path>
+                                <path d="M34 9v4"></path>
+                                <path d="M8 12h5"></path>
+                                <path d="M10.5 9.5v5"></path>
+                                <path d="m6 6 3 3"></path>
+                                <path d="m15 6-3 3"></path>
+                                <path d="M20 28h13"></path>
+                            </svg>
+
+                        </div>
+
+                        <div class="main-service-number">
+                            04
+                        </div>
+
+                    </div>
+
+                    <h2>
+                        Dezenfekte
+                        <span>Uygulamaları</span>
+                    </h2>
+
+                    <p>
+                        Mikroorganizmalara karşı etkili profesyonel
+                        dezenfekte çözümleri.
+                    </p>
+
+                    <div class="main-service-card-link">
+                        Detayları İncele
+                        <span>→</span>
+                    </div>
+
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="ilan-filter-options">
+    </section>
 
-            <button class="ilan-filter-btn active" data-filter="all">Tüm İlanlar</button>
-            <button class="ilan-filter-btn" data-filter="satilik">Satılık</button>
-            <button class="ilan-filter-btn" data-filter="kiralik">Kiralık</button>
-            <button class="ilan-filter-btn" data-filter="daire">Daire</button>
-            <button class="ilan-filter-btn" data-filter="villa">Villa</button>
-            <button class="ilan-filter-btn" data-filter="arsa">Arsa</button>
-            <button class="ilan-filter-btn" data-filter="ticari">Ticari</button>
+    <!-- HİZMET SÜRECİ -->
+    <section class="service-process">
+
+        <div class="lg:container mx-auto px-30">
+
+            <div class="service-process-heading">
+
+                <div>
+                    <div class="service-process-label">
+                        Nasıl çalışıyoruz?
+                    </div>
+
+                    <h2 class="service-process-title">
+                        Profesyonel Hizmet Sürecimiz
+                    </h2>
+                </div>
+
+                <p class="service-process-intro">
+                    İhtiyaç analizi ile başlayan sürecimiz, planlama,
+                    uygulama ve düzenli denetim adımlarıyla kesintisiz
+                    devam eder.
+                </p>
+
+            </div>
+
+            <div class="service-process-grid">
+
+                <div class="service-process-item">
+
+                    <div class="service-process-item-number">
+                        01
+                    </div>
+
+                    <h3>İhtiyaç Analizi</h3>
+
+                    <p>
+                        İşletmenizin ihtiyaçlarını analiz ederek en uygun
+                        hizmet modelini belirliyoruz.
+                    </p>
+
+                </div>
+
+                <div class="service-process-item">
+
+                    <div class="service-process-item-number">
+                        02
+                    </div>
+
+                    <h3>Saha Keşfi ve Planlama</h3>
+
+                    <p>
+                        Saha keşfinin ardından size özel hizmet planı ve
+                        uygulama yol haritası hazırlıyoruz.
+                    </p>
+
+                </div>
+
+                <div class="service-process-item">
+
+                    <div class="service-process-item-number">
+                        03
+                    </div>
+
+                    <h3>Uygulama ve Yönlendirme</h3>
+
+                    <p>
+                        Eğitimli ekibimizle hazırlanan planı uyguluyor ve
+                        süreçleri doğru şekilde yönetiyoruz.
+                    </p>
+
+                </div>
+
+                <div class="service-process-item">
+
+                    <div class="service-process-item-number">
+                        04
+                    </div>
+
+                    <h3>Düzenli Denetim</h3>
+
+                    <p>
+                        Hizmet kalitesini düzenli olarak denetliyor ve
+                        sürekli iyileştirme sağlıyoruz.
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
-    </div>
-</section>
 
-<!-- listings -->
-<article id="ctl00_pagecontent_pnlProjects" class="listing-section relative z-2">
-  <div class="lg:container mx-auto px-30">
-    <div class="listing-grid" id="listingGrid"></div>
-
-    <p class="listing-note" id="listingNote" style="display:none;">
-      Henüz ilan eklenmemiştir.
-    </p>
-  </div>
-</article>
-
-<div class="listing-modal" id="listingModal">
-  <div class="listing-modal-bg"></div>
-
-  <div class="listing-modal-content">
-    <button class="listing-modal-close" type="button">×</button>
-
-    <div class="listing-modal-grid">
-      <div>
-        <img id="modalImg" class="modal-img" src="" alt="">
-        <div class="modal-desc">
-          <h4>Açıklama</h4>
-          <p id="modalDesc"></p>
-        </div>
-      </div>
-
-      <div>
-        <span id="modalStatus" class="listing-badge satilik">SATILIK</span>
-        <h2 id="modalTitle"></h2>
-        <p id="modalLocation" class="modal-location"></p>
-
-        <div class="modal-info">
-          <div><span>Fiyat</span><strong id="modalPrice"></strong></div>
-          <div><span>Oda Sayısı</span><strong id="modalRoom"></strong></div>
-          <div><span>Brüt m²</span><strong id="modalGross"></strong></div>
-          <div><span>Net m²</span><strong id="modalNet"></strong></div>
-          <div><span>Bina Yaşı</span><strong id="modalAge"></strong></div>
-          <div><span>Bulunduğu Kat</span><strong id="modalFloor"></strong></div>
-          <div><span>Isıtma</span><strong id="modalHeating"></strong></div>
-          <div><span>Banyo Sayısı</span><strong id="modalBath"></strong></div>
-          <div><span>Balkon</span><strong id="modalBalcony"></strong></div>
-          <div><span>Otopark</span><strong id="modalParking"></strong></div>
-        </div>
-
-        <a href="#" id="modalLink" target="_blank" class="modal-link-btn">
-          İlana Git ↗
-        </a>
-
-        <p class="modal-small-note">sahibinden.com ilan sayfasına yönlendirileceksiniz.</p>
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
 
 </main>
 
-<script
-    src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap&amp;key=AgEsXxtalXGU9zJ-qKqADjU7WDaXV2GQcngfgA2mUMN4Q1uwXvHbobI83nR12Z3k"
-    async></script>
-<script>
-    function GetMap() {
-        var map = new Microsoft.Maps.Map('#suamap', {
-            mapTypeId: Microsoft.Maps.MapTypeId.canvasDark,
-            zoom: 10
-        });
-        var data = [{
-                "title": "Aqua Park Villaları",
-                "location": {
-                    "latitude": 39.577579,
-                    "longitude": 26.867134
-                },
-                "description": "<a href='tamamlanan-projeler/aqua-park-villalari.php' title='Aqua Park Villaları'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Ataşehir Konakları",
-                "location": {
-                    "latitude": 40.995247,
-                    "longitude": 29.133704
-                },
-                "description": "<a href='tamamlanan-projeler/atasehir-konaklari.php' title='Ataşehir Konakları'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Elite Life",
-                "location": {
-                    "latitude": 40.999047,
-                    "longitude": 29.139482
-                },
-                "description": "<a href='tamamlanan-projeler/elite-life.php' title='Elite Life'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Elite City",
-                "location": {
-                    "latitude": 41.044933,
-                    "longitude": 28.783224
-                },
-                "description": "<a href='tamamlanan-projeler/elite-city.php' title='Elite City'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Elite Plaza",
-                "location": {
-                    "latitude": 40.997936,
-                    "longitude": 29.140615
-                },
-                "description": "<a href='tamamlanan-projeler/elite-plaza.php' title='Elite Plaza'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Elite Side",
-                "location": {
-                    "latitude": 40.879147,
-                    "longitude": 29.253194
-                },
-                "description": "<a href='tamamlanan-projeler/elite-side.php' title='Elite Side'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "İbrahim Halil Kaya Camii",
-                "location": {
-                    "latitude": 39.799028,
-                    "longitude": 42.6730981
-                },
-                "description": "<a href='tamamlanan-projeler/ibrahim-halil-kaya-camii.php' title='İbrahim Halil Kaya Camii'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Batumi View",
-                "location": {
-                    "latitude": 41.6232095,
-                    "longitude": 41.59356
-                },
-                "description": "<a href='sua-global/batumi-view.php' title='Batumi View'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Atlas Üniversitesi",
-                "location": {
-                    "latitude": 41.098117,
-                    "longitude": 28.979655
-                },
-                "description": "<a href='tamamlanan-projeler/atlas-universitesi.php' title='Atlas Üniversitesi'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Elite Concept",
-                "location": {
-                    "latitude": 40.995637,
-                    "longitude": 29.054312
-                },
-                "description": "<a href='tamamlanan-projeler/elite-concept.php' title='Elite Concept'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Elite Park",
-                "location": {
-                    "latitude": 41.025596,
-                    "longitude": 29.096202
-                },
-                "description": "<a href='tamamlanan-projeler/elite-park.php' title='Elite Park'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Green Land Villaları",
-                "location": {
-                    "latitude": 36.1961334,
-                    "longitude": 43.9707642
-                },
-                "description": "<a href='sua-global/green-land-villalari.php' title='Green Land Villaları'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Green World Residence",
-                "location": {
-                    "latitude": 36.2108198,
-                    "longitude": 43.9636975
-                },
-                "description": "<a href='sua-global/green-world-residence.php' title='Green World Residence'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Green World Towers",
-                "location": {
-                    "latitude": 36.2108141,
-                    "longitude": 43.8138413
-                },
-                "description": "<a href='sua-global/green-world-towers.php' title='Green World Towers'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Elite Erenköy",
-                "location": {
-                    "latitude": 40.977776,
-                    "longitude": 29.073781
-                },
-                "description": "<a href='devam-eden-projeler/elite-erenkoy.php' title='Elite Erenköy'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Elite Terrace",
-                "location": {
-                    "latitude": 40.986462,
-                    "longitude": 29.079459
-                },
-                "description": "<a href='planlanan-projeler/elite-terrace.php' title='Elite Terrace'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Kuzey Adalar",
-                "location": {
-                    "latitude": 40.885257,
-                    "longitude": 29.209899
-                },
-                "description": "<a href='devam-eden-projeler/elite-istanbul.php' title='Kuzey Adalar'>Projeyi Ziyaret Et</a>"
-            }, {
-                "title": "Elite Garden",
-                "location": {
-                    "latitude": 41.096996,
-                    "longitude": 29.341954
-                },
-                "description": "<a href='devam-eden-projeler/elite-garden.php' title='Elite Garden'>Projeyi Ziyaret Et</a>"
-            }
-            /*, {
-                    "title": "Elite Suits",
-                    "location": {
-                        "latitude": 41.066584,
-                        "longitude": 29.251775
-                    },
-                    "description": "<a href='devam-eden-projeler/elite-suits.php' title='Elite Suits'>Projeyi Ziyaret Et</a>"
-                }*/
-        ];
-        // JSON verisi içinde dönerek pinleri ekle
-        for (var i = 0; i < data.length; i++) {
+<!-- HİZMET DETAY MODALI -->
+<div
+    class="iz-service-modal"
+    id="izServiceModal"
+    aria-hidden="true">
 
-            var pin = new Microsoft.Maps.Pushpin(data[i].location, {
-                color: '#6fc8dd'
-            });
-            pin.title = data[i].title;
-            pin.description = data[i].description;
-            map.entities.push(pin);
+    <div
+        class="iz-service-modal-backdrop"
+        data-modal-close>
+    </div>
 
-            // Pin'e tıklama olayı ekle
-            Microsoft.Maps.Events.addHandler(pin, 'click', function(e) {
-                var infoBox = new Microsoft.Maps.Infobox(e.target.getLocation(), {
-                    title: e.target.title,
-                    description: e.target.description
-                });
-                infoBox.setMap(map);
-            });
-        }
-    }
-</script>
+    <div
+        class="iz-service-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="izServiceModalTitle">
 
-<!-- footer -->
-<footer class="footer-field mt-120 ct:mt-90 lg:mt-75 md:mt-60 sm:mt-45">
-    <div class="ct:container mx-auto">
-        <div class="bg-viking rounded-30 ct:rounded-none py-75 ct:py-60 lg:py-45">
-            <div
-                class="wrapper lg:container mx-auto px-30 grid gap-x-90 ct:gap-x-75 lg:gap-x-60 md:gap-x-0 md:gap-y-45 md:justify-items-center">
+        <!-- Sol hizmet menüsü -->
+        <aside class="iz-service-modal-sidebar">
 
-                <!-- corporate -->
+            <div class="iz-service-modal-brand">
 
-
-                <!-- quickLinks -->
-                <div class="group md:max-w-300 xs:max-w-none md:w-full">
-                    <div class="menu text-24 sm:text-22 leading-tight space-y-20">
-
-                        <a href="../sua-hakkinda.html" title="Kurumsal"
-                            class="item block text-woodsmoke font-light flex items-center space-x-10">
-                            <span>Kurumsal</span>
-                            <span
-                                class="icon icon-arrow-to-right text-18 leading-0 text-woodsmoke block duration-300 relative z-2"></span>
-                        </a>
-
-<a href="../projeler/1.html" title="İlanlarımız"
-    class="item block text-woodsmoke font-light flex items-center space-x-10">
-    <span>İlanlarımız</span>
-    <span class="icon icon-arrow-to-right text-18 leading-0 text-woodsmoke block duration-300 relative z-2"></span>
-</a>
-
-                        <a href="../projeler/2.html" title="Zecorner"
-    class="item block text-woodsmoke font-light flex items-center space-x-10">
-    <span>Zecorner İş Birliği</span>
-
-
-
-                        <a href="../iletisim/index.html" title="İletişim"
-                            class="item block text-woodsmoke font-light flex items-center space-x-10">
-                            <span>İletişim</span>
-                            <span
-                                class="icon icon-arrow-to-right text-18 leading-0 text-woodsmoke block duration-300 relative z-2"></span>
-                        </a>
-
-                    </div>
+                <div class="iz-service-modal-brand-label">
+                    İZ Özel Güvenlik
                 </div>
 
-                <!-- projectLinks -->
-                <div class="group md:max-w-300 xs:max-w-none md:w-full">
-
-                </div>
-
-                <!-- contracts -->
-                <div class="group md:max-w-300 xs:max-w-none md:w-full">
-                    <div class="menu text-14 leading-tight space-y-20">
-
-                    </div>
-                    <a href="tel:4449782" title="Çağrı Merkezi" class="call flex items-center space-x-15 mt-30">
-                        <div
-                            class="icon-wrapper w-45 h-45 rounded-full bg-white flex justify-center items-center shrink-0">
-                            <span
-                                class="icon icon-phone text-18 leading-0 text-woodsmoke block duration-300 relative z-2"></span>
-                        </div>
-                        <div class="text">
-                            <div class="title text-white text-14 leading-none mb-5">Çağrı Merkezi</div>
-                            <div
-                                class="number leading-none tracking-tighter text-white font-bold text-24 duration-350">
-                                444 0 000
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- scroolTop -->
-                <div class="group md:mx-auto">
-                    <div class="scroll-top flex items-center space-x-15">
-                        <span class="text-14 text-woodsmoke">Yukarı Dön</span>
-                        <span
-                            class="icon icon-arrow-to-top text-16 leading-0 text-woodsmoke block duration-300 relative z-2 shrink-0"></span>
-                    </div>
+                <div
+                    class="iz-service-modal-category"
+                    id="izServiceModalCategory">
+                    Hizmetlerimiz
                 </div>
 
             </div>
+
+            <div
+                class="iz-service-modal-nav"
+                id="izServiceModalNav">
+            </div>
+
+        </aside>
+
+        <!-- Sağ içerik -->
+        <div class="iz-service-modal-main">
+
+            <div class="iz-service-modal-topbar">
+
+                <span class="iz-service-modal-topbar-text">
+                    Hizmet detayları
+                </span>
+
+                <button
+                    type="button"
+                    class="iz-service-modal-close"
+                    data-modal-close
+                    aria-label="Modalı kapat">
+                    ×
+                </button>
+
+            </div>
+
+            <div class="iz-service-modal-content">
+
+                <div class="iz-service-modal-hero">
+
+                    <div>
+
+                        <div
+                            class="iz-service-modal-eyebrow"
+                            id="izServiceModalEyebrow">
+                            Profesyonel hizmet
+                        </div>
+
+                        <h2
+                            class="iz-service-modal-title"
+                            id="izServiceModalTitle">
+                            Hizmet başlığı
+                        </h2>
+
+                        <p
+                            class="iz-service-modal-description"
+                            id="izServiceModalDescription">
+                        </p>
+
+                    </div>
+
+<div class="iz-service-modal-visual">
+
+    <img
+        src="../assets/image/logo/izLogo.png"
+        alt="İZ Özel Güvenlik"
+        class="iz-service-modal-logo">
+
+</div>
+
+                </div>
+
+                <section class="iz-service-modal-section">
+
+                    <h3 class="iz-service-modal-section-title">
+                        Hizmetin öne çıkan özellikleri
+                    </h3>
+
+                    <div
+                        class="iz-service-modal-highlights"
+                        id="izServiceModalHighlights">
+                    </div>
+
+                </section>
+
+                <section class="iz-service-modal-section">
+
+                    <h3 class="iz-service-modal-section-title">
+                        Hizmet kapsamında
+                    </h3>
+
+                    <div
+                        class="iz-service-modal-scope"
+                        id="izServiceModalScope">
+                    </div>
+
+                </section>
+
+                <div class="iz-service-modal-footer">
+
+                    <div class="iz-service-modal-footer-text">
+
+                        <strong>
+                            İşletmeniz için doğru çözümü birlikte belirleyelim.
+                        </strong>
+
+                        <span>
+                            Hizmet kapsamı hakkında ayrıntılı bilgi alabilirsiniz.
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="../iletisim/index.html"
+                        class="iz-service-modal-contact">
+                        İletişime Geçin
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="copyright text-center text-white text-14 xs:text-12 py-20">© 2026 YEK Gayrimenkul - Tüm hakları saklıdır</div>
+
+    </div>
+
+</div>
+
+<!-- footer -->
+<!-- footer -->
+<footer class="footer-field mt-120 ct:mt-90 lg:mt-75 md:mt-60 sm:mt-45">
+    <div class="ct:container mx-auto">
+
+        <div class="bg-viking rounded-30 ct:rounded-none py-75 ct:py-60 lg:py-45">
+
+            <div
+                class="wrapper lg:container mx-auto px-30 grid gap-x-90 ct:gap-x-75 lg:gap-x-60 md:gap-x-0 md:gap-y-45 md:justify-items-center">
+
+                <!-- social -->
+                <div class="group max-w-225 md:max-w-300 xs:max-w-none md:w-full">
+
+                    <div class="social flex items-center justify-between space-x-20 mt-45">
+
+                        <a href="#"
+                           title="Facebook"
+                           target="_blank"
+                           class="item relative shrink-0">
+
+                            <span
+                                class="icon icon-facebook text-16 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                        <a href="#"
+                           title="Twitter"
+                           target="_blank"
+                           class="item relative shrink-0">
+
+                            <span
+                                class="icon icon-twitter text-16 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                        <a href="#"
+                           title="Instagram"
+                           target="_blank"
+                           class="item relative shrink-0">
+
+                            <span
+                                class="icon icon-instagram text-16 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                        <a href="#"
+                           title="Youtube"
+                           target="_blank"
+                           class="item relative shrink-0">
+
+                            <span
+                                class="icon icon-youtube text-16 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                        <a href="#"
+                           title="Linkedin"
+                           target="_blank"
+                           class="item relative shrink-0">
+
+                            <span
+                                class="icon icon-linkedin text-16 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- ana bağlantılar -->
+                <div class="group md:max-w-300 xs:max-w-none md:w-full">
+
+                    <div class="menu text-24 sm:text-22 leading-tight space-y-20">
+
+                        <a href="../sua-hakkinda.html"
+                           title="Kurumsal"
+                           class="item block text-woodsmoke font-light flex items-center space-x-10">
+
+                            <span>Kurumsal</span>
+
+                            <span
+                                class="icon icon-arrow-to-right text-18 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                        <a href="../projeler/1.html"
+                           title="Hizmetlerimiz"
+                           class="item block text-woodsmoke font-light flex items-center space-x-10">
+
+                            <span>Hizmetlerimiz</span>
+
+                            <span
+                                class="icon icon-arrow-to-right text-18 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                        <a href="index.html"
+                           title="İletişim"
+                           class="item block text-woodsmoke font-light flex items-center space-x-10">
+
+                            <span>İletişim</span>
+
+                            <span
+                                class="icon icon-arrow-to-right text-18 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- hizmet bağlantıları -->
+                <div class="group md:max-w-300 xs:max-w-none md:w-full">
+
+                    <div class="menu text-16 leading-tight space-y-25">
+
+                        <a href="../projeler/1.html"
+                           title="Özel Güvenlik Hizmetleri"
+                           class="item block text-woodsmoke flex items-center">
+
+                            <span>Özel Güvenlik Hizmetleri</span>
+
+                            <span
+                                class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                        <a href="../projeler/1.html"
+                           title="Temizlik Hizmetleri"
+                           class="item block text-woodsmoke flex items-center">
+
+                            <span>Temizlik Hizmetleri</span>
+
+                            <span
+                                class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                        <a href="../projeler/1.html"
+                           title="İK ve Personel Temini"
+                           class="item block text-woodsmoke flex items-center">
+
+                            <span>İK/Personel Temini</span>
+
+                            <span
+                                class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                        <a href="../projeler/1.html"
+                           title="Dezenfekte Uygulamaları"
+                           class="item block text-woodsmoke flex items-center">
+
+                            <span>Dezenfekte Uygulamaları</span>
+
+                            <span
+                                class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2">
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- yukarı dön -->
+                <div class="group md:mx-auto">
+
+                    <div class="scroll-top flex items-center space-x-15">
+
+                        <span class="text-14 text-woodsmoke">
+                            Yukarı Dön
+                        </span>
+
+                        <span
+                            class="icon icon-arrow-to-top text-16 leading-0 text-woodsmoke block duration-300 relative z-2 shrink-0">
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright text-center text-white text-14 xs:text-12 py-20">
+            © 2026 İZ Özel Güvenlik - Tüm hakları saklıdır
+        </div>
+
     </div>
 </footer>
 
@@ -585,235 +2273,152 @@
 </div>
 
 <!-- headerMenu -->
+<!-- headerMenu -->
 <div class="menu-popup popup-general z-90 fixed left-0 top-20 lg:top-0 w-full">
+
     <div class="ct:container mx-auto px-30 lg:px-0 h-full">
+
         <div class="wrapper relative">
-            <div class="background w-full h-full absolute left-0 top-0 bg-viking opacity-90 rounded-30 lg:rounded-none">
+
+            <div
+                class="background w-full h-full absolute left-0 top-0 bg-viking opacity-90 rounded-30 lg:rounded-none">
             </div>
-            <div class="lg:container mx-auto px-30 lg:h-full lg:py-30 lg:pt-120">
+
+            <div class="lg:container mx-auto px-30 lg:h-full lg:py-30 lg:pt-0">
+
                 <div
-                    class="content pt-150 pb-60 px-60 lg:pt-0 md:pb-30 md:px-45 relative grid grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-90 ct:gap-60 lg:gap-45 sm:gap-30 lg:h-full lg:overflow-x-hidden lg:overflow-y-auto">
+                    class="content pt-150 pb-60 px-90 lg:pt-0 md:pb-30 md:px-45 relative grid grid-cols-2 sm:grid-cols-1 gap-120 ct:gap-75 lg:gap-60 sm:gap-45 items-center lg:h-full lg:overflow-x-hidden lg:overflow-y-auto">
 
-                    <!-- swiperProjects -->
-                    <div class="project-map-carousel swiper overflow-visible w-full lg:hidden">
-                        <div class="swiper-wrapper">
+                    <!-- iletişim bilgileri -->
+                    <div
+                        class="group max-w-380 justify-self-start sm:row-start-2 sm:justify-self-start menu-contact-area">
 
-                            <div class="swiper-slide">
-                                <div class="project-map-el max-w-325 rounded-30 overflow-hidden isolate">
-                                    <div class="image-field h-250 relative">
-                                        <div class="image absolute w-full h-full left-0 top-0 bg-woodsmoke">
-                                            <img src="../uploads/genelresim/b_elite-istanbul-5072.jpg"
-                                                alt="Kuzey Adalar"
-                                                class="block w-full h-full object-cover object-center opacity-80">
-                                        </div>
-                                        <div class="location absolute bottom-0 left-0 w-full py-20 px-30 pr-60 z-2">
-                                            <span
-                                                class="icon icon-pin text-22 leading-0 text-white block duration-300 relative z-2 mb-5"></span>
-                                            <span class="text-16 font-light text-white leading-tight">Kartal
-                                                / İstanbul</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-field bg-white p-30 relative">
-                                        <a href="../devan-eden-projeler/elite-istanbul.html" title="Kuzey Adalar"
-                                            class="image-gallery block w-55 h-55 rounded-full flex justify-center items-center duration-350 bg-viking hover:bg-gothic">
-                                            <span
-                                                class="icon icon-image text-24 leading-0 text-white block duration-300 relative z-2"></span>
-                                        </a>
-                                        <div class="title text-24 leading-tight font-medium text-woodsmoke mb-5">
-                                            Kuzey Adalar</div>
-                                        <div class="category text-woodsmoke font-light leading-tight">
-                                            Devam Eden Projeler</div>
-                                        <a href="../devam-eden-projeler/elite-istanbul.html#location" title="Haritayı Gör"
-                                            class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 mt-45 black bg-woodsmoke before:bg-black px-30 w-fit rounded-100 h-40 flex">
-                                            <div
-                                                class="text relative z-2 backface-hidden shrink-0 duration-450 text-14 text-white font-medium">
-                                                Haritayı gör
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="contacts mt-0 text-left">
 
-                            <div class="swiper-slide">
-                                <div class="project-map-el max-w-325 rounded-30 overflow-hidden isolate">
-                                    <div class="image-field h-250 relative">
-                                        <div class="image absolute w-full h-full left-0 top-0 bg-woodsmoke">
-                                            <img src="../uploads/genelresim/b_elite-quatro-6852.jpg" alt="Elite Erenköy"
-                                                class="block w-full h-full object-cover object-center opacity-80">
-                                        </div>
-                                        <div class="location absolute bottom-0 left-0 w-full py-20 px-30 pr-60 z-2">
-                                            <span
-                                                class="icon icon-pin text-22 leading-0 text-white block duration-300 relative z-2 mb-5"></span>
-                                            <span class="text-16 font-light text-white leading-tight">Erenköy
-                                                / İstanbul</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-field bg-white p-30 relative">
-                                        <a href="../devam-eden-projeler/elite-erenkoy.html" title="Elite Erenköy"
-                                            class="image-gallery block w-55 h-55 rounded-full flex justify-center items-center duration-350 bg-viking hover:bg-gothic">
-                                            <span
-                                                class="icon icon-image text-24 leading-0 text-white block duration-300 relative z-2"></span>
-                                        </a>
-                                        <div class="title text-24 leading-tight font-medium text-woodsmoke mb-5">
-                                            Elite Erenköy</div>
-                                        <div class="category text-woodsmoke font-light leading-tight">
-                                            Devam Eden Projeler</div>
-                                        <a href="../devan-eden-projeler/elite-erenkoy.html#location" title="Haritayı Gör"
-                                            class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 mt-45 black bg-woodsmoke before:bg-black px-30 w-fit rounded-100 h-40 flex">
-                                            <div
-                                                class="text relative z-2 backface-hidden shrink-0 duration-450 text-14 text-white font-medium">
-                                                Haritayı gör
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="https://maps.app.goo.gl/q4DsiaR6AHsTGCEEA"
+                               title="Adres"
+                               target="_blank"
+                               class="item block leading-tight font-light text-white mb-15">
 
-                            <div class="swiper-slide">
-                                <div class="project-map-el max-w-325 rounded-30 overflow-hidden isolate">
-                                    <div class="image-field h-250 relative">
-                                        <div class="image absolute w-full h-full left-0 top-0 bg-woodsmoke">
-                                            <img src="../uploads/genelresim/b_elite-suits-4382.jpg" alt="Elite Suits"
-                                                class="block w-full h-full object-cover object-center opacity-80">
-                                        </div>
-                                        <div class="location absolute bottom-0 left-0 w-full py-20 px-30 pr-60 z-2">
-                                            <span
-                                                class="icon icon-pin text-22 leading-0 text-white block duration-300 relative z-2 mb-5"></span>
-                                            <span class="text-16 font-light text-white leading-tight">Çekmeköy
-                                                - İstanbul</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-field bg-white p-30 relative">
-                                        <a href="../devam-eden-projeler/elite-suits.html" title="Elite Suits"
-                                            class="image-gallery block w-55 h-55 rounded-full flex justify-center items-center duration-350 bg-viking hover:bg-gothic">
-                                            <span
-                                                class="icon icon-image text-24 leading-0 text-white block duration-300 relative z-2"></span>
-                                        </a>
-                                        <div class="title text-24 leading-tight font-medium text-woodsmoke mb-5">
-                                            Elite Suits</div>
-                                        <div class="category text-woodsmoke font-light leading-tight">Devam
-                                            Eden Projeler</div>
-                                        <a href="../devam-eden-projeler/elite-suits.html#location" title="Haritayı Gör"
-                                            class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 mt-45 black bg-woodsmoke before:bg-black px-30 w-fit rounded-100 h-40 flex">
-                                            <div
-                                                class="text relative z-2 backface-hidden shrink-0 duration-450 text-14 text-white font-medium">
-                                                Haritayı gör
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                                Bahçe Mahallesi (Eski 4602 Sokak)
+                                4607 Sokak No:4 Zemin:16,
+                                33010 Akdeniz/Mersin
 
-                            <div class="swiper-slide">
-                                <div class="project-map-el max-w-325 rounded-30 overflow-hidden isolate">
-                                    <div class="image-field h-250 relative">
-                                        <div class="image absolute w-full h-full left-0 top-0 bg-woodsmoke">
-                                            <img src="../uploads/genelresim/b_elite-garden-2801.jpg" alt="Elite Garden"
-                                                class="block w-full h-full object-cover object-center opacity-80">
-                                        </div>
-                                        <div class="location absolute bottom-0 left-0 w-full py-20 px-30 pr-60 z-2">
-                                            <span
-                                                class="icon icon-pin text-22 leading-0 text-white block duration-300 relative z-2 mb-5"></span>
-                                            <span class="text-16 font-light text-white leading-tight">Çekmeköy
-                                                / İstanbul </span>
-                                        </div>
-                                    </div>
-                                    <div class="content-field bg-white p-30 relative">
-                                        <a href="../devam-eden-projeler/elite-garden.html" title="Elite Garden"
-                                            class="image-gallery block w-55 h-55 rounded-full flex justify-center items-center duration-350 bg-viking hover:bg-gothic">
-                                            <span
-                                                class="icon icon-image text-24 leading-0 text-white block duration-300 relative z-2"></span>
-                                        </a>
-                                        <div class="title text-24 leading-tight font-medium text-woodsmoke mb-5">
-                                            Elite Garden</div>
-                                        <div class="category text-woodsmoke font-light leading-tight">Devam
-                                            Eden Projeler</div>
-                                        <a href="../devam-eden-projeler/elite-garden.html#location" title="Haritayı Gör"
-                                            class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 mt-45 black bg-woodsmoke before:bg-black px-30 w-fit rounded-100 h-40 flex">
-                                            <div
-                                                class="text relative z-2 backface-hidden shrink-0 duration-450 text-14 text-white font-medium">
-                                                Haritayı gör
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            </a>
+
+                            <a href="tel:03123120000"
+                               title="Telefon"
+                               class="item block leading-tight font-bold text-white">
+
+                                0 (312) 312 00 00
+
+                            </a>
 
                         </div>
-                    </div>
 
-                    <!-- contacts -->
-                    <div class="group max-w-275 justify-self-center sm:row-start-2 sm:justify-self-end">
+                        <div class="button-group flex space-x-15 justify-start mt-30">
 
+                            <a href="https://maps.app.goo.gl/q4DsiaR6AHsTGCEEA"
+                               title="Haritayı Gör"
+                               target="_blank"
+                               class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 black w-fit bg-woodsmoke px-30 w-full rounded-100 h-40">
 
-                        <div class="contacts mt-60 text-right">
-                            <a href="https://maps.app.goo.gl/q4DsiaR6AHsTGCEEA" title="Adres" target="_blank"
-                                class="item block leading-tight font-light text-white mb-15">Barbaros, Halk Cd. Zecorner Plaza No:1 İç Kapı No:1, 34746 Ataşehir/İstanbul</a>
-                            <a href="tel:4449782" title="Telefon"
-                                class="item block leading-tight font-bold text-white">444 0 000</a>
-                        </div>
-                        <div class="button-group flex space-x-15 justify-between mt-30">
-                            <a href="https://maps.app.goo.gl/q4DsiaR6AHsTGCEEA" title="Haritayı Gör" target="_blank"
-                                class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 black w-fit bg-woodsmoke px-30 w-full rounded-100 h-40 flex justify-center">
                                 <div
                                     class="text relative z-2 backface-hidden shrink-0 duration-450 text-14 text-center text-white">
+
                                     Haritayı gör
+
                                 </div>
+
                             </a>
-                            <a href=""
-                                title="Yol Tarifi Al" target="_blank"
-                                class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 white w-fit bg-white px-30 w-full rounded-100 h-40 flex justify-center">
+
+                            <a href="https://maps.app.goo.gl/q4DsiaR6AHsTGCEEA"
+                               title="Yol Tarifi Al"
+                               target="_blank"
+                               class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 white w-fit bg-white px-30 w-full rounded-100 h-40">
+
                                 <div
                                     class="text relative z-2 backface-hidden shrink-0 duration-450 text-14 text-center text-woodsmoke">
+
                                     Yol tarifi
+
                                 </div>
+
                             </a>
+
                         </div>
 
                     </div>
 
-                    <!-- mainMenu -->
-                    <div class="group justify-self-end sm:row-start-1 main-menu-fix">
-                        <div
-                            class="menu text-42 ct:text-38 lg:text-32 md:text-28 sm:text-24 xs:text-22 leading-tight space-y-20 sm:space-y-15 translate-x-25 relative">
+                    <!-- ana menü -->
+                    <div
+                        class="group justify-self-end self-start pt-20 sm:justify-self-start sm:row-start-1 main-menu-fix">
 
-                            <a href="../sua-hakkinda.html" title="Kurumsal"
-                                class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
-                                <span>Kurumsal</span>
+                        <div
+                            class="menu text-42 ct:text-38 lg:text-32 md:text-28 sm:text-24 xs:text-22 leading-tight space-y-20 sm:space-y-15 translate-x-25 relative z-30">
+
+                            <a href="../index.html"
+                               title="Anasayfa"
+                               class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
+
+                                <span>Anasayfa</span>
+
                                 <span
-                                    class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2"></span>
+                                    class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2">
+                                </span>
+
                             </a>
 
-<a href="../projeler/1.html" title="İlanlarımız"
-    class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
-    <span>İlanlarımız</span>
-    <span class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2"></span>
-</a>
+                            <a href="../sua-hakkinda.html"
+                               title="Kurumsal"
+                               class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
 
+                                <span>Kurumsal</span>
+
+                                <span
+                                    class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2">
+                                </span>
+
+                            </a>
+
+                            <a href="../projeler/1.html"
+                               title="Hizmetlerimiz"
+                               class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
+
+                                <span>Hizmetlerimiz</span>
+
+                                <span
+                                    class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2">
+                                </span>
+
+                            </a>
 
                             <a href="../iletisim/index.html" title="İletişim"
-                                class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
+                               title="İletişim"
+                               class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
+
                                 <span>İletişim</span>
+
                                 <span
-                                    class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2"></span>
+                                    class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2">
+                                </span>
+
                             </a>
 
-
-<!-- Bunu ekle -->
-<a href="../projeler/2.html" title="Zecorner"
-    class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
-    <span>Zecorner</span>
-    <span class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2"></span>
-</a>
-
                         </div>
+
                     </div>
 
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </div>
+
 
 <div class="container-size lg:container px-30 mx-auto"></div>
 <div class="bg-overlay black"></div>
@@ -841,296 +2446,812 @@ let cookieContent =
 </script>
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const servicesData = {
+
+        /*
+        ======================================
+        ÖZEL GÜVENLİK
+        ======================================
+        */
+
+        security: {
+            category: "Özel Güvenlik Hizmetleri",
+            icon: "◈",
+
+            items: [
+                {
+                    title: "Özel Güvenlik Hizmetleri",
+                    eyebrow: "Güvenliğinizi profesyonellere emanet edin",
+                    description:
+                        "İşletmelerin, çalışanların, ziyaretçilerin ve yaşam alanlarının güvenliğini; eğitimli personel, doğru risk analizi ve planlı saha yönetimiyle sağlıyoruz. Hizmet modeli, tesisin yapısı ve ihtiyaçları incelenerek özel olarak hazırlanır.",
+
+                    highlights: [
+                        "5188 sayılı kanuna uygun hizmet",
+                        "Eğitimli ve deneyimli güvenlik personeli",
+                        "Risk analizi ve tesise özel güvenlik planı"
+                    ],
+
+                    scope: [
+                        "Giriş ve çıkış kontrolü",
+                        "Ziyaretçi ve personel takibi",
+                        "Devriye ve saha kontrolü",
+                        "Kamera sistemlerinin takibi",
+                        "Acil durum ve olay yönetimi",
+                        "Düzenli denetim ve raporlama"
+                    ]
+                },
+
+                {
+                    title: "Endüstriyel Tesis Güvenliği",
+                    eyebrow: "Üretim alanları için bütüncül koruma",
+                    description:
+                        "Fabrika ve endüstriyel tesislerde üretim alanlarını, çalışanları, ekipmanları ve kritik noktaları korumaya yönelik güvenlik çözümleri sunuyoruz. Hizmet öncesinde saha riskleri belirlenir ve görev planı buna göre hazırlanır.",
+
+                    highlights: [
+                        "Üretim alanlarına özel risk analizi",
+                        "Malzeme ve araç giriş-çıkış kontrolü",
+                        "7/24 saha ve çevre güvenliği"
+                    ],
+
+                    scope: [
+                        "Tesis giriş güvenliği",
+                        "Araç ve yük kontrolü",
+                        "Depo ve üretim alanı güvenliği",
+                        "Çevre ve devriye kontrolü",
+                        "Kamera izleme",
+                        "Olay raporlama"
+                    ]
+                },
+
+                {
+                    title: "Alışveriş Merkezi Güvenliği",
+                    eyebrow: "Yoğun ziyaretçi trafiğinde kontrollü güvenlik",
+                    description:
+                        "Alışveriş merkezlerinin yoğun insan trafiğini dikkate alarak ziyaretçi güvenliği, mağaza alanları, ortak kullanım bölgeleri ve giriş noktaları için profesyonel güvenlik hizmeti sağlıyoruz.",
+
+                    highlights: [
+                        "Kalabalık alan yönetimi",
+                        "Mağaza ve ortak alan güvenliği",
+                        "Şüpheli durumlara hızlı müdahale"
+                    ],
+
+                    scope: [
+                        "Ziyaretçi giriş kontrolü",
+                        "Ortak alan devriyeleri",
+                        "Mağaza güvenliği desteği",
+                        "Kayıp eşya ve olay yönetimi",
+                        "Otopark güvenliği",
+                        "Kamera takip hizmeti"
+                    ]
+                },
+
+                {
+                    title: "Havaalanı ve Demiryolu Güvenliği",
+                    eyebrow: "Ulaşım alanlarında kesintisiz güvenlik",
+                    description:
+                        "Yüksek yolcu sirkülasyonuna sahip havaalanı ve demiryolu alanlarında giriş-çıkış kontrolü, bagaj ve alan güvenliği ile kritik noktaların korunmasına yönelik planlı çözümler sunuyoruz.",
+
+                    highlights: [
+                        "Yüksek yoğunluklu alan yönetimi",
+                        "Kontrol noktalarında etkin denetim",
+                        "Teknolojik güvenlik sistemleriyle destek"
+                    ],
+
+                    scope: [
+                        "Yolcu giriş kontrolü",
+                        "Bagaj kontrol alanları",
+                        "Peron ve terminal güvenliği",
+                        "Kritik bölge devriyesi",
+                        "Kamera ve alarm takibi",
+                        "Acil durum desteği"
+                    ]
+                },
+
+                {
+                    title: "Site ve Özel Konut Güvenliği",
+                    eyebrow: "Yaşam alanlarında huzur ve güven",
+                    description:
+                        "Site ve özel konutlarda sakinlerin, misafirlerin ve ortak kullanım alanlarının güvenliğini sağlıyoruz. Hizmet planı, yerleşkenin fiziki yapısı ve yaşam düzeni dikkate alınarak hazırlanır.",
+
+                    highlights: [
+                        "Sakin ve ziyaretçi kontrolü",
+                        "Ortak alanların düzenli denetimi",
+                        "Yaşam alanlarına uygun güvenlik yaklaşımı"
+                    ],
+
+                    scope: [
+                        "Ana giriş güvenliği",
+                        "Ziyaretçi kaydı",
+                        "Araç giriş-çıkış kontrolü",
+                        "Site içi devriye",
+                        "Kamera takibi",
+                        "Acil durum koordinasyonu"
+                    ]
+                },
+
+                {
+                    title: "Hastane Güvenliği",
+                    eyebrow: "Hassas sağlık ortamlarında profesyonel yaklaşım",
+                    description:
+                        "Hastanelerde hasta, hasta yakını, sağlık çalışanı ve ziyaretçi yoğunluğunu dikkate alan güvenlik hizmetleri sunuyoruz. Müdahalelerde iletişim, sakinlik ve insan odaklı yaklaşım ön plandadır.",
+
+                    highlights: [
+                        "Hasta ve ziyaretçi odaklı yaklaşım",
+                        "Yoğun alanlarda düzen ve kontrol",
+                        "Acil durumlara hızlı müdahale"
+                    ],
+
+                    scope: [
+                        "Hastane giriş güvenliği",
+                        "Acil servis alanı kontrolü",
+                        "Ziyaretçi yönlendirmesi",
+                        "Kat ve koridor devriyesi",
+                        "Kamera kontrolü",
+                        "Olay ve kriz yönetimi"
+                    ]
+                },
+
+                {
+                    title: "Turizm ve Otel Güvenliği",
+                    eyebrow: "Misafir memnuniyetini koruyan güvenlik",
+                    description:
+                        "Otel ve turizm tesislerinde misafirlerin huzurunu bozmadan, görünür fakat rahatsız etmeyen bir güvenlik sistemi kuruyoruz. Tesis alanları ve yoğun dönemler için esnek görev planları hazırlıyoruz.",
+
+                    highlights: [
+                        "Misafir odaklı güvenlik hizmeti",
+                        "Otel alanlarına uygun görev planı",
+                        "Güler yüzlü ve iletişimi güçlü personel"
+                    ],
+
+                    scope: [
+                        "Otel giriş kontrolü",
+                        "Lobi ve ortak alan güvenliği",
+                        "Otopark kontrolü",
+                        "Etkinlik alanı güvenliği",
+                        "Gece devriyesi",
+                        "Acil durum desteği"
+                    ]
+                }
+            ]
+        },
+
+        /*
+        ======================================
+        TEMİZLİK
+        ======================================
+        */
+
+        cleaning: {
+            category: "Temizlik Hizmetleri",
+            icon: "✦",
+
+            items: [
+                {
+                    title: "Profesyonel Temizlik Hizmetleri",
+                    eyebrow: "Hijyenik, düzenli ve sağlıklı alanlar",
+                    description:
+                        "Kurumsal alanlardan yaşam alanlarına kadar farklı ihtiyaçlara uygun profesyonel temizlik hizmetleri sunuyoruz. Kullanılan ekipman, ürün ve çalışma planı hizmet verilecek alanın yapısına göre belirlenir.",
+
+                    highlights: [
+                        "Alanlara özel temizlik planı",
+                        "Eğitimli ve deneyimli ekip",
+                        "Profesyonel makine ve ekipman kullanımı"
+                    ],
+
+                    scope: [
+                        "Periyodik temizlik",
+                        "Genel alan temizliği",
+                        "Zemin ve yüzey temizliği",
+                        "Ortak kullanım alanları",
+                        "Hijyen kontrolü",
+                        "Düzenli hizmet denetimi"
+                    ]
+                },
+
+                {
+                    title: "Fabrika Temizliği",
+                    eyebrow: "Üretim alanlarında kontrollü temizlik",
+                    description:
+                        "Fabrikalarda üretim düzenini aksatmadan; makine çevreleri, zeminler, depolar, ortak kullanım alanları ve üretim sahaları için planlı temizlik hizmetleri gerçekleştiriyoruz.",
+
+                    highlights: [
+                        "Üretime uygun çalışma planı",
+                        "Endüstriyel ekipman kullanımı",
+                        "İş sağlığı ve güvenliği kurallarına uyum"
+                    ],
+
+                    scope: [
+                        "Üretim alanı temizliği",
+                        "Zemin temizliği",
+                        "Makine çevresi temizliği",
+                        "Depo temizliği",
+                        "Personel kullanım alanları",
+                        "Dış saha temizliği"
+                    ]
+                },
+
+                {
+                    title: "Alışveriş Merkezi Temizliği",
+                    eyebrow: "Yoğun sirkülasyonda kesintisiz hijyen",
+                    description:
+                        "Alışveriş merkezlerinin yoğun ziyaretçi trafiğine uygun olarak ortak alan, yürüyen merdiven, cam, zemin, restoran bölgesi ve lavabo temizliği hizmetleri sunuyoruz.",
+
+                    highlights: [
+                        "Ziyaretçileri rahatsız etmeyen uygulama",
+                        "Yoğun alanlarda sürekli temizlik",
+                        "Alana uygun makine ve ekipman"
+                    ],
+
+                    scope: [
+                        "Ortak alan temizliği",
+                        "Zemin ve cam temizliği",
+                        "Lavabo hijyeni",
+                        "Yeme-içme alanları",
+                        "Otopark temizliği",
+                        "Atık toplama"
+                    ]
+                },
+
+                {
+                    title: "İnşaat Sonrası Temizlik",
+                    eyebrow: "Yeni alanları kullanıma hazır hâle getiriyoruz",
+                    description:
+                        "İnşaat veya tadilat sonrasında oluşan kaba kir, toz, boya ve yapı kalıntılarını profesyonel ekipmanlarla temizleyerek alanı güvenli ve kullanıma hazır hâle getiriyoruz.",
+
+                    highlights: [
+                        "Kaba ve detaylı temizlik",
+                        "Yapı kalıntılarının kontrollü çıkarılması",
+                        "Teslim öncesi son kontrol"
+                    ],
+
+                    scope: [
+                        "Moloz ve kaba kir temizliği",
+                        "Boya ve harç kalıntıları",
+                        "Cam ve çerçeve temizliği",
+                        "Zemin detay temizliği",
+                        "Dolap ve sabit yüzeyler",
+                        "Son teslim temizliği"
+                    ]
+                },
+
+                {
+                    title: "Hastane Temizliği",
+                    eyebrow: "Sağlık alanlarında yüksek hijyen standardı",
+                    description:
+                        "Hastanelerde hasta güvenliği ve enfeksiyon risklerini dikkate alan, belirlenen hijyen kurallarına uygun temizlik hizmetleri sunuyoruz. Riskli alanlarda uygun ürün ve ekipman kullanılır.",
+
+                    highlights: [
+                        "Sağlık alanlarına uygun hijyen planı",
+                        "Riskli bölgelerde kontrollü uygulama",
+                        "Periyodik dezenfeksiyon desteği"
+                    ],
+
+                    scope: [
+                        "Hasta odaları",
+                        "Koridor ve bekleme alanları",
+                        "Lavabo ve ortak alanlar",
+                        "Zemin ve yüzey hijyeni",
+                        "Atık alanlarının temizliği",
+                        "Periyodik detay temizliği"
+                    ]
+                },
+
+                {
+                    title: "Bina ve Ofis Temizliği",
+                    eyebrow: "Çalışma alanlarında düzenli ve sağlıklı ortam",
+                    description:
+                        "Ofislerin günlük çalışma düzenini aksatmadan zemin, masa, ortak alan, lavabo ve cam temizliği hizmetleri sunuyoruz. Hizmet sıklığı ihtiyaca göre günlük, haftalık veya aylık planlanabilir.",
+
+                    highlights: [
+                        "Çalışma saatlerine uygun planlama",
+                        "Düzenli ve periyodik hizmet",
+                        "Kurumsal alanlara özel uygulama"
+                    ],
+
+                    scope: [
+                        "Çalışma alanları",
+                        "Toplantı odaları",
+                        "Mutfak ve lavabolar",
+                        "Zemin ve yüzeyler",
+                        "Cam temizliği",
+                        "Ortak kullanım alanları"
+                    ]
+                },
+
+                {
+                    title: "Dış Cephe ve Cam Temizliği",
+                    eyebrow: "Yüksek yapılarda profesyonel uygulama",
+                    description:
+                        "Yüksek binaların dış cephe ve cam yüzeylerinde, uygun güvenlik önlemleri ve profesyonel ekipmanlarla temizlik hizmeti gerçekleştiriyoruz.",
+
+                    highlights: [
+                        "Yüksekte çalışma güvenliği",
+                        "Profesyonel ekipman kullanımı",
+                        "Cephe malzemesine uygun ürün seçimi"
+                    ],
+
+                    scope: [
+                        "Dış cephe camları",
+                        "Kompozit yüzeyler",
+                        "Tabela temizliği",
+                        "Cephe kaplamaları",
+                        "Yüksek cam alanları",
+                        "Periyodik cephe bakımı"
+                    ]
+                },
+
+                {
+                    title: "Açık Alan ve Dış Mekân Temizliği",
+                    eyebrow: "Çevre düzenini destekleyen temizlik",
+                    description:
+                        "Bahçe, otopark, yürüyüş alanı, tesis çevresi ve diğer açık alanlarda çevre temizliği, atık toplama ve düzenli bakım hizmetleri gerçekleştiriyoruz.",
+
+                    highlights: [
+                        "Geniş alanlara uygun ekipman",
+                        "Çevre dostu uygulamalar",
+                        "Periyodik saha temizliği"
+                    ],
+
+                    scope: [
+                        "Bahçe ve yeşil alanlar",
+                        "Otopark temizliği",
+                        "Yürüyüş yolları",
+                        "Tesis çevresi",
+                        "Atık toplama",
+                        "Dış alan yıkama"
+                    ]
+                }
+            ]
+        },
+
+        /*
+        ======================================
+        İNSAN KAYNAKLARI
+        ======================================
+        */
+
+        hr: {
+            category: "İnsan Kaynakları Hizmetleri",
+            icon: "◎",
+
+            items: [
+                {
+                    title: "Personel Temini",
+                    eyebrow: "Doğru işe doğru personel",
+                    description:
+                        "İşletmenizin pozisyon, yetkinlik ve çalışma düzeni ihtiyaçlarını analiz ederek uygun personel adaylarını belirliyoruz. Seçim sürecinde deneyim, uyum, güvenilirlik ve görev gereklilikleri birlikte değerlendirilir.",
+
+                    highlights: [
+                        "İhtiyaca uygun aday belirleme",
+                        "Yetkinlik ve pozisyon uyumu",
+                        "Hızlı ve güvenilir personel çözümü"
+                    ],
+
+                    scope: [
+                        "Personel ihtiyacı analizi",
+                        "Aday araştırma ve değerlendirme",
+                        "Ön görüşme süreçleri",
+                        "Pozisyona uygunluk kontrolü",
+                        "İşe yönlendirme",
+                        "Süreç takibi"
+                    ]
+                },
+
+                {
+                    title: "Personel Özlük İşlemleri",
+                    eyebrow: "Düzenli ve kontrollü personel süreçleri",
+                    description:
+                        "Çalışanların işe girişinden görev süresince devam eden personel dosyası, belge, izin ve özlük süreçlerinin düzenli şekilde yürütülmesine destek sağlıyoruz.",
+
+                    highlights: [
+                        "Personel belgelerinin düzenli takibi",
+                        "Şirket standartlarına uygun süreç",
+                        "İşveren ve çalışan haklarının korunması"
+                    ],
+
+                    scope: [
+                        "İşe giriş belgeleri",
+                        "Personel özlük dosyası",
+                        "İzin ve rapor takibi",
+                        "Belge güncellemeleri",
+                        "Çalışan kayıtları",
+                        "Süreç raporlaması"
+                    ]
+                }
+            ]
+        },
+
+        /*
+        ======================================
+        DEZENFEKTE
+        ======================================
+        */
+
+        disinfection: {
+            category: "Dezenfekte Uygulamaları",
+            icon: "✧",
+
+            items: [
+                {
+                    title: "Profesyonel Dezenfekte Uygulamaları",
+                    eyebrow: "Sağlıklı alanlar için etkili hijyen",
+                    description:
+                        "Çalışma ve yaşam alanlarında mikroorganizma riskini azaltmaya yönelik profesyonel dezenfekte uygulamaları gerçekleştiriyoruz. Uygulama yöntemi, alanın büyüklüğü ve kullanım yoğunluğuna göre belirlenir.",
+
+                    highlights: [
+                        "Alana uygun uygulama yöntemi",
+                        "Profesyonel ekipman kullanımı",
+                        "Kontrollü ve planlı hizmet"
+                    ],
+
+                    scope: [
+                        "Ofis ve işyerleri",
+                        "Ortak kullanım alanları",
+                        "Okul ve eğitim alanları",
+                        "Sağlık tesisleri",
+                        "Araç içi uygulamalar",
+                        "Periyodik dezenfeksiyon"
+                    ]
+                },
+
+                {
+                    title: "İşyeri Dezenfeksiyonu",
+                    eyebrow: "Çalışanlar ve ziyaretçiler için sağlıklı ortam",
+                    description:
+                        "Ofis, fabrika, mağaza ve diğer işyerlerinde sık temas edilen yüzeyler ve ortak alanlar için planlı dezenfeksiyon hizmetleri sunuyoruz.",
+
+                    highlights: [
+                        "Çalışma düzenine uygun planlama",
+                        "Sık temas yüzeylerine odaklanma",
+                        "İşletmeye özel uygulama programı"
+                    ],
+
+                    scope: [
+                        "Kapı ve temas yüzeyleri",
+                        "Çalışma masaları",
+                        "Ortak kullanım alanları",
+                        "Lavabo ve mutfak bölümleri",
+                        "Toplantı odaları",
+                        "Personel alanları"
+                    ]
+                },
+
+                {
+                    title: "Ortak Alan Dezenfeksiyonu",
+                    eyebrow: "Yoğun kullanımlı alanlarda hijyen desteği",
+                    description:
+                        "Site, AVM, okul, otel ve benzeri yoğun kullanımlı alanlarda girişler, koridorlar, asansörler ve ortak yüzeyler için dezenfeksiyon uygulamaları gerçekleştiriyoruz.",
+
+                    highlights: [
+                        "Yoğun kullanımlı alanlara özel uygulama",
+                        "Geniş yüzeylerde etkili çalışma",
+                        "Periyodik hizmet seçeneği"
+                    ],
+
+                    scope: [
+                        "Giriş ve resepsiyon alanları",
+                        "Asansörler",
+                        "Koridorlar",
+                        "Bekleme alanları",
+                        "Ortak kullanım ekipmanları",
+                        "Sık temas edilen yüzeyler"
+                    ]
+                },
+
+                {
+                    title: "Periyodik Hijyen Uygulamaları",
+                    eyebrow: "Sürdürülebilir temizlik ve koruma",
+                    description:
+                        "Belirlenen periyotlarda gerçekleştirilen dezenfeksiyon uygulamalarıyla işletmelerde hijyen standardının düzenli biçimde korunmasına destek oluyoruz.",
+
+                    highlights: [
+                        "Haftalık veya aylık hizmet planı",
+                        "Düzenli uygulama kaydı",
+                        "İhtiyaca göre güncellenen program"
+                    ],
+
+                    scope: [
+                        "Planlı saha kontrolü",
+                        "Periyodik uygulama",
+                        "Yoğunluk değerlendirmesi",
+                        "Kritik alanların belirlenmesi",
+                        "Uygulama kayıtları",
+                        "Hizmet sonrası kontrol"
+                    ]
+                }
+            ]
+        }
+    };
+
+
+    /*
+    ======================================
+    MODAL ELEMANLARI
+    ======================================
+    */
+
+    const modal = document.getElementById("izServiceModal");
+    const modalDialog = modal?.querySelector(".iz-service-modal-dialog");
+    const categoryElement = document.getElementById("izServiceModalCategory");
+    const navElement = document.getElementById("izServiceModalNav");
+    const eyebrowElement = document.getElementById("izServiceModalEyebrow");
+    const titleElement = document.getElementById("izServiceModalTitle");
+    const descriptionElement = document.getElementById("izServiceModalDescription");
+
+    const highlightsElement = document.getElementById("izServiceModalHighlights");
+    const scopeElement = document.getElementById("izServiceModalScope");
+
+    let activeServiceKey = null;
+    let activeItemIndex = 0;
+
+
+    /*
+    ======================================
+    İÇERİĞİ EKRANA BAS
+    ======================================
+    */
+
+    function renderServiceItem(serviceKey, itemIndex) {
+
+        const service = servicesData[serviceKey];
+
+        if (!service || !service.items[itemIndex]) {
+            return;
+        }
+
+        const item = service.items[itemIndex];
+
+        activeServiceKey = serviceKey;
+        activeItemIndex = itemIndex;
+
+        categoryElement.textContent = service.category;
+        eyebrowElement.textContent = item.eyebrow;
+        titleElement.textContent = item.title;
+        descriptionElement.textContent = item.description;
+
+        highlightsElement.innerHTML = item.highlights
+            .map(function (highlight) {
+                return `
+                    <div class="iz-service-modal-highlight">
+                        <div class="iz-service-modal-highlight-icon">✓</div>
+                        <p>${highlight}</p>
+                    </div>
+                `;
+            })
+            .join("");
+
+        scopeElement.innerHTML = item.scope
+            .map(function (scopeItem) {
+                return `
+                    <div class="iz-service-modal-scope-item">
+                        ${scopeItem}
+                    </div>
+                `;
+            })
+            .join("");
+
+        navElement
+            .querySelectorAll(".iz-service-modal-tab")
+            .forEach(function (button, index) {
+                button.classList.toggle("is-active", index === itemIndex);
+            });
+
+        const modalMain = modal.querySelector(".iz-service-modal-main");
+
+        if (modalMain) {
+            modalMain.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    }
+
+
+    /*
+    ======================================
+    SOL MENÜYÜ OLUŞTUR
+    ======================================
+    */
+
+    function renderServiceNavigation(serviceKey) {
+
+        const service = servicesData[serviceKey];
+
+        if (!service) {
+            return;
+        }
+
+        navElement.innerHTML = service.items
+            .map(function (item, index) {
+
+                const number = String(index + 1).padStart(2, "0");
+
+                return `
+                    <button
+                        type="button"
+                        class="iz-service-modal-tab ${index === 0 ? "is-active" : ""}"
+                        data-service-item="${index}">
+
+                        <span class="iz-service-modal-tab-number">
+                            ${number}
+                        </span>
+
+                        <span>
+                            ${item.title}
+                        </span>
+
+                    </button>
+                `;
+            })
+            .join("");
+
+        navElement
+            .querySelectorAll(".iz-service-modal-tab")
+            .forEach(function (button) {
+
+                button.addEventListener("click", function () {
+
+                    const itemIndex = Number(
+                        button.dataset.serviceItem
+                    );
+
+                    renderServiceItem(serviceKey, itemIndex);
+                });
+            });
+    }
+
+
+    /*
+    ======================================
+    MODALI AÇ
+    ======================================
+    */
+
+    function openServiceModal(serviceKey) {
+
+        if (!modal || !servicesData[serviceKey]) {
+            return;
+        }
+
+        renderServiceNavigation(serviceKey);
+        renderServiceItem(serviceKey, 0);
+
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("iz-modal-open");
+
+        window.setTimeout(function () {
+            const firstTab = navElement.querySelector(
+                ".iz-service-modal-tab"
+            );
+
+            firstTab?.focus();
+        }, 250);
+    }
+
+
+    /*
+    ======================================
+    MODALI KAPAT
+    ======================================
+    */
+
+    function closeServiceModal() {
+
+        if (!modal) {
+            return;
+        }
+
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("iz-modal-open");
+    }
+
+
+    /*
+    ======================================
+    KART TIKLAMALARI
+    ======================================
+    */
+
+    document
+        .querySelectorAll(".js-service-modal-open")
+        .forEach(function (card) {
+
+            card.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+                const serviceKey = card.dataset.service;
+
+                openServiceModal(serviceKey);
+            });
+        });
+
+
+    /*
+    ======================================
+    KAPATMA BUTONLARI
+    ======================================
+    */
+
+    modal
+        ?.querySelectorAll("[data-modal-close]")
+        .forEach(function (closeElement) {
+
+            closeElement.addEventListener(
+                "click",
+                closeServiceModal
+            );
+        });
+
+
+    /*
+    ======================================
+    KLAVYE KONTROLLERİ
+    ======================================
+    */
+
+    document.addEventListener("keydown", function (event) {
+
+        if (!modal?.classList.contains("is-open")) {
+            return;
+        }
+
+        if (event.key === "Escape") {
+            closeServiceModal();
+        }
+
+        if (
+            event.key === "ArrowDown" ||
+            event.key === "ArrowRight"
+        ) {
+            const service = servicesData[activeServiceKey];
+
+            if (!service) {
+                return;
+            }
+
+            const nextIndex =
+                (activeItemIndex + 1) % service.items.length;
+
+            renderServiceItem(activeServiceKey, nextIndex);
+        }
+
+        if (
+            event.key === "ArrowUp" ||
+            event.key === "ArrowLeft"
+        ) {
+            const service = servicesData[activeServiceKey];
+
+            if (!service) {
+                return;
+            }
+
+            const previousIndex =
+                activeItemIndex === 0
+                    ? service.items.length - 1
+                    : activeItemIndex - 1;
+
+            renderServiceItem(
+                activeServiceKey,
+                previousIndex
+            );
+        }
+    });
+
+});
+</script>
+
 <script src="../assets/js/script.js"></script>
 <script defer src="../assets/vendor/sweetalert.min.js"></script>
 <script defer src="../assets/vendor/app.js"></script>
 <script defer src="../assets/vendor/app.forms.js"></script>
-
 </form>
 </div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const grid = document.getElementById("listingGrid");
-  const note = document.getElementById("listingNote");
-  const buttons = document.querySelectorAll(".ilan-filter-btn");
-
-  let currentFilter = "all";
-
-  function escapeHtml(value) {
-    return String(value || "")
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#039;");
-  }
-
-  function renderListings(ilanlar) {
-    if (!ilanlar || ilanlar.length === 0) {
-      note.style.display = "block";
-      grid.innerHTML = "";
-      return;
-    }
-
-    note.style.display = "none";
-
-    grid.innerHTML = ilanlar.map(function (ilan) {
-      const durum = ilan.durum || "";
-      const kategori = ilan.kategori || "";
-      const durumText = durum === "kiralik" ? "KİRALIK" : "SATILIK";
-      const badgeClass = durum === "kiralik" ? "kiralik" : "satilik";
-      const category = `${durum} ${kategori}`;
-      const gorsel = ilan.gorsel || "assets/image/other/ilanlarBg.png";
-
-      return `
-        <div class="listing-card ilan-card" data-category="${escapeHtml(category)}">
-          <div class="listing-image">
-            <img src="../${escapeHtml(gorsel)}" alt="${escapeHtml(ilan.baslik)}">
-
-            <button class="listing-detail-btn"
-              type="button"
-              data-title="${escapeHtml(ilan.baslik)}"
-              data-status="${escapeHtml(durumText)}"
-              data-location="${escapeHtml(ilan.konum)}"
-              data-price="${escapeHtml(ilan.fiyat)}"
-              data-room="${escapeHtml(ilan.oda || "-")}"
-              data-gross="${escapeHtml(ilan.brut || "-")}"
-              data-net="${escapeHtml(ilan.net || "-")}"
-              data-age="${escapeHtml(ilan.bina_yasi || "-")}"
-              data-floor="${escapeHtml(ilan.kat || "-")}"
-              data-heating="${escapeHtml(ilan.isitma || "-")}"
-              data-bath="${escapeHtml(ilan.banyo || "-")}"
-              data-balcony="${escapeHtml(ilan.balkon || "-")}"
-              data-parking="${escapeHtml(ilan.otopark || "-")}"
-              data-desc="${escapeHtml(ilan.aciklama || "")}"
-              data-img="../${escapeHtml(gorsel)}"
-              data-link="${escapeHtml(ilan.link || "#")}">
-              Detayları Gör ↗
-            </button>
-          </div>
-
-          <div class="listing-content">
-            <span class="listing-badge ${badgeClass}">${durumText}</span>
-            <h3>${escapeHtml(ilan.baslik)}</h3>
-            <p class="location">📍 ${escapeHtml(ilan.konum)}</p>
-            <div class="price">${escapeHtml(ilan.fiyat)}</div>
-          </div>
-        </div>
-      `;
-    }).join("");
-
-    initListingEvents();
-    applyFilter(currentFilter);
-  }
-
-  function applyFilter(filter) {
-    const cards = document.querySelectorAll(".ilan-card");
-
-    cards.forEach(function (card) {
-      const categories = card.getAttribute("data-category") || "";
-
-      if (filter === "all" || categories.includes(filter)) {
-        card.style.display = "";
-      } else {
-        card.style.display = "none";
-      }
-    });
-  }
-
-  buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      currentFilter = button.getAttribute("data-filter");
-
-      buttons.forEach(btn => btn.classList.remove("active"));
-      button.classList.add("active");
-
-      applyFilter(currentFilter);
-    });
-  });
-
-  function initListingEvents() {
-    const modal = document.getElementById("listingModal");
-    const closeBtn = document.querySelector(".listing-modal-close");
-    const modalBg = document.querySelector(".listing-modal-bg");
-
-    document.querySelectorAll(".listing-detail-btn").forEach(function (btn) {
-      btn.addEventListener("click", function (e) {
-        e.preventDefault();
-
-        document.getElementById("modalImg").src = btn.dataset.img;
-        document.getElementById("modalTitle").innerText = btn.dataset.title;
-        document.getElementById("modalStatus").innerText = btn.dataset.status;
-        document.getElementById("modalLocation").innerText = "📍 " + btn.dataset.location;
-        document.getElementById("modalPrice").innerText = btn.dataset.price;
-        document.getElementById("modalRoom").innerText = btn.dataset.room;
-        document.getElementById("modalGross").innerText = btn.dataset.gross;
-        document.getElementById("modalNet").innerText = btn.dataset.net;
-        document.getElementById("modalAge").innerText = btn.dataset.age;
-        document.getElementById("modalFloor").innerText = btn.dataset.floor;
-        document.getElementById("modalHeating").innerText = btn.dataset.heating;
-        document.getElementById("modalBath").innerText = btn.dataset.bath;
-        document.getElementById("modalBalcony").innerText = btn.dataset.balcony;
-        document.getElementById("modalParking").innerText = btn.dataset.parking;
-        document.getElementById("modalDesc").innerText = btn.dataset.desc;
-        document.getElementById("modalLink").href = btn.dataset.link;
-
-        const statusEl = document.getElementById("modalStatus");
-        statusEl.classList.remove("satilik", "kiralik");
-        statusEl.classList.add(btn.dataset.status === "KİRALIK" ? "kiralik" : "satilik");
-
-        modal.classList.add("active");
-      });
-    });
-
-    function closeModal() {
-      modal.classList.remove("active");
-    }
-
-    closeBtn.onclick = closeModal;
-    modalBg.onclick = closeModal;
-  }
-
-  fetch("../data/ilanlar.json")
-    .then(res => res.json())
-    .then(renderListings)
-    .catch(function () {
-      note.style.display = "block";
-      note.innerText = "İlanlar yüklenirken bir hata oluştu.";
-    });
-});
-</script>
-
 
 </body>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const grid = document.getElementById("listingGrid");
-  const note = document.getElementById("listingNote");
-  const buttons = document.querySelectorAll(".ilan-filter-btn");
-  let currentFilter = "all";
-
-  function safe(value) {
-    return String(value || "")
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#039;");
-  }
-
-  function applyFilter(filter) {
-    document.querySelectorAll(".ilan-card").forEach(function(card) {
-      const categories = card.getAttribute("data-category") || "";
-      card.style.display = filter === "all" || categories.includes(filter) ? "" : "none";
-    });
-  }
-
-  function openModal(btn) {
-    document.getElementById("modalImg").src = btn.dataset.img;
-    document.getElementById("modalTitle").innerText = btn.dataset.title;
-    document.getElementById("modalStatus").innerText = btn.dataset.status;
-    document.getElementById("modalLocation").innerText = "📍 " + btn.dataset.location;
-    document.getElementById("modalPrice").innerText = btn.dataset.price;
-    document.getElementById("modalRoom").innerText = btn.dataset.room;
-    document.getElementById("modalGross").innerText = btn.dataset.gross;
-    document.getElementById("modalNet").innerText = btn.dataset.net;
-    document.getElementById("modalAge").innerText = btn.dataset.age;
-    document.getElementById("modalFloor").innerText = btn.dataset.floor;
-    document.getElementById("modalHeating").innerText = btn.dataset.heating;
-    document.getElementById("modalBath").innerText = btn.dataset.bath;
-    document.getElementById("modalBalcony").innerText = btn.dataset.balcony;
-    document.getElementById("modalParking").innerText = btn.dataset.parking;
-    document.getElementById("modalDesc").innerText = btn.dataset.desc;
-    document.getElementById("modalLink").href = btn.dataset.link;
-
-    const statusEl = document.getElementById("modalStatus");
-    statusEl.classList.remove("satilik", "kiralik");
-    statusEl.classList.add(btn.dataset.status === "KİRALIK" ? "kiralik" : "satilik");
-
-    document.getElementById("listingModal").classList.add("active");
-  }
-
-  fetch("../data/ilanlar.json")
-    .then(res => res.json())
-    .then(function(ilanlar) {
-      if (!ilanlar || ilanlar.length === 0) {
-        note.style.display = "block";
-        return;
-      }
-
-      grid.innerHTML = ilanlar.map(function(ilan) {
-        const durum = ilan.durum || "";
-        const kategori = ilan.kategori || "";
-        const durumText = durum === "kiralik" ? "KİRALIK" : "SATILIK";
-        const badgeClass = durum === "kiralik" ? "kiralik" : "satilik";
-        const gorsel = ilan.gorsel || "assets/image/other/ilanlarBg.png";
-
-        return `
-          <div class="listing-card ilan-card" data-category="${safe(durum + " " + kategori)}">
-            <div class="listing-image">
-              <img src="../${safe(gorsel)}" alt="${safe(ilan.baslik)}">
-
-              <button class="listing-detail-btn"
-                type="button"
-                data-title="${safe(ilan.baslik)}"
-                data-status="${safe(durumText)}"
-                data-location="${safe(ilan.konum)}"
-                data-price="${safe(ilan.fiyat)}"
-                data-room="${safe(ilan.oda || "-")}"
-                data-gross="${safe(ilan.brut || "-")}"
-                data-net="${safe(ilan.net || "-")}"
-                data-age="${safe(ilan.bina_yasi || "-")}"
-                data-floor="${safe(ilan.kat || "-")}"
-                data-heating="${safe(ilan.isitma || "-")}"
-                data-bath="${safe(ilan.banyo || "-")}"
-                data-balcony="${safe(ilan.balkon || "-")}"
-                data-parking="${safe(ilan.otopark || "-")}"
-                data-desc="${safe(ilan.aciklama || "")}"
-                data-img="../${safe(gorsel)}"
-                data-link="${safe(ilan.link || "#")}">
-                Detayları Gör ↗
-              </button>
-            </div>
-
-            <div class="listing-content">
-              <span class="listing-badge ${badgeClass}">${durumText}</span>
-              <h3>${safe(ilan.baslik)}</h3>
-              <p class="location">📍 ${safe(ilan.konum)}</p>
-              <div class="price">${safe(ilan.fiyat)}</div>
-            </div>
-          </div>
-        `;
-      }).join("");
-
-      applyFilter(currentFilter);
-
-      document.querySelectorAll(".listing-detail-btn").forEach(function(btn) {
-        btn.addEventListener("click", function() {
-          openModal(btn);
-        });
-      });
-    });
-
-  buttons.forEach(function(button) {
-    button.addEventListener("click", function() {
-      currentFilter = button.getAttribute("data-filter");
-
-      buttons.forEach(btn => btn.classList.remove("active"));
-      button.classList.add("active");
-
-      applyFilter(currentFilter);
-    });
-  });
-
-  document.querySelector(".listing-modal-close").addEventListener("click", function() {
-    document.getElementById("listingModal").classList.remove("active");
-  });
-
-  document.querySelector(".listing-modal-bg").addEventListener("click", function() {
-    document.getElementById("listingModal").classList.remove("active");
-  });
-});
-</script>
-<!-- Mirrored from suainsaat.com.tr/projeler/1.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jun 2026 17:54:44 GMT -->
 </html>
