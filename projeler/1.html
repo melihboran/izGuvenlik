@@ -1009,6 +1009,9 @@ body.iz-modal-open {
     min-width: 180px;
     height: 48px;
     padding: 0 21px;
+        border: 0;
+    font-family: inherit;
+    cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1159,6 +1162,514 @@ body.iz-modal-open {
     max-width: 70%;
     height: auto;
     object-fit: contain;
+}
+
+/*
+==========================================
+FİYAT AL MODALI
+==========================================
+*/
+
+.iz-price-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.iz-price-modal.is-open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.iz-price-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 7, 42, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.iz-price-modal-dialog {
+    position: relative;
+    z-index: 2;
+    width: min(1050px, 100%);
+    max-height: calc(100vh - 48px);
+    display: grid;
+    grid-template-columns: 360px minmax(0, 1fr);
+    overflow: hidden;
+    border-radius: 26px;
+    background: #fff;
+    box-shadow: 0 40px 120px rgba(4, 7, 50, 0.38);
+    transform: translateY(22px) scale(0.98);
+    transition: transform 0.35s ease;
+}
+
+.iz-price-modal.is-open .iz-price-modal-dialog {
+    transform: translateY(0) scale(1);
+}
+
+/* Sol alan */
+
+.iz-price-modal-info {
+    position: relative;
+    overflow: hidden;
+    padding: 46px 36px;
+    color: #fff;
+    background:
+        radial-gradient(
+            circle at 20% 15%,
+            rgba(100, 115, 255, 0.45),
+            transparent 35%
+        ),
+        linear-gradient(
+            155deg,
+            #0b0e59 0%,
+            #19177d 52%,
+            #302db0 100%
+        );
+}
+
+.iz-price-modal-info::after {
+    content: "";
+    position: absolute;
+    right: -75px;
+    bottom: -75px;
+    width: 220px;
+    height: 220px;
+    border: 38px solid rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+.iz-price-modal-brand {
+    position: relative;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+}
+
+.iz-price-modal-info h2 {
+    position: relative;
+    z-index: 2;
+    margin: 25px 0 0;
+    color: #fff;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+
+.iz-price-modal-info h2 strong {
+    font-weight: 800;
+}
+
+.iz-price-modal-info > p {
+    position: relative;
+    z-index: 2;
+    margin-top: 23px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.iz-price-modal-benefits {
+    position: relative;
+    z-index: 2;
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.iz-price-modal-benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.iz-price-modal-benefit > span {
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.iz-price-modal-benefit strong {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+}
+
+.iz-price-modal-benefit small {
+    display: block;
+    margin-top: 4px;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+/* Sağ form alanı */
+
+.iz-price-modal-form-area {
+    min-width: 0;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    padding: 38px 42px 42px;
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #f8f9ff 100%
+        );
+}
+
+.iz-price-modal-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.iz-price-modal-top span {
+    color: #302db0;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.iz-price-modal-top h3 {
+    margin: 6px 0 0;
+    color: #121750;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.iz-price-modal-close {
+    width: 43px;
+    height: 43px;
+    flex: 0 0 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    background: #eef0fa;
+    color: #121750;
+    font-family: inherit;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.iz-price-modal-close:hover {
+    color: #fff;
+    background: #302db0;
+    transform: rotate(90deg);
+}
+
+/* Form */
+
+.iz-price-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 19px 17px;
+}
+
+.iz-price-form-full {
+    grid-column: 1 / -1;
+}
+
+.iz-price-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.iz-price-form-group label {
+    margin-bottom: 8px;
+    color: #3c4260;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.iz-price-form-group input,
+.iz-price-form-group textarea {
+    width: 100%;
+    border: 1px solid rgba(18, 23, 80, 0.12);
+    border-radius: 12px;
+    outline: 0;
+    background: #fff;
+    color: #121750;
+    font-family: inherit;
+    font-size: 14px;
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.iz-price-form-group input {
+    height: 50px;
+    padding: 0 16px;
+}
+
+.iz-price-form-group textarea {
+    min-height: 125px;
+    padding: 14px 16px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.iz-price-form-group input::placeholder,
+.iz-price-form-group textarea::placeholder {
+    color: #a0a4b6;
+}
+
+.iz-price-form-group input:focus,
+.iz-price-form-group textarea:focus {
+    border-color: #302db0;
+    box-shadow: 0 0 0 3px rgba(48, 45, 176, 0.08);
+}
+
+#izPriceService {
+    background: rgba(48, 45, 176, 0.055);
+    color: #302db0;
+    font-weight: 700;
+}
+
+/* Onay */
+
+.iz-price-form-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    cursor: pointer;
+}
+
+.iz-price-form-consent input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.iz-price-form-consent span {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    color: #6d7185;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+.iz-price-form-consent span::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid rgba(48, 45, 176, 0.35);
+    border-radius: 5px;
+    background: #fff;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.iz-price-form-consent span::after {
+    content: "✓";
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 900;
+    opacity: 0;
+    transform: scale(0.7);
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.iz-price-form-consent input:checked + span::before {
+    border-color: #302db0;
+    background: #302db0;
+}
+
+.iz-price-form-consent input:checked + span::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Gönder butonu */
+
+.iz-price-form-submit {
+    margin-top: 4px;
+}
+
+.iz-price-form-submit button {
+    width: 100%;
+    height: 54px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    border-radius: 999px;
+    background:
+        linear-gradient(
+            120deg,
+            #18177a,
+            #302db0
+        );
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.iz-price-form-submit button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(48, 45, 176, 0.24);
+}
+
+.iz-price-form-submit button span:last-child {
+    font-size: 21px;
+}
+
+.iz-price-form-submit small {
+    display: block;
+    margin-top: 10px;
+    color: #8a8ea2;
+    font-size: 11px;
+    text-align: center;
+}
+
+.iz-price-form-result {
+    display: none;
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.iz-price-form-result.is-visible {
+    display: block;
+}
+
+.iz-price-form-result.is-success {
+    background: rgba(48, 45, 176, 0.08);
+    color: #25228F;
+    border: 1px solid rgba(48, 45, 176, 0.15);
+}
+
+.iz-price-form-result.is-error {
+    background: rgba(200, 30, 50, 0.07);
+    color: #b61d30;
+    border: 1px solid rgba(200, 30, 50, 0.14);
+}
+
+.iz-price-form-submit button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 900px) {
+
+    .iz-price-modal-dialog {
+        grid-template-columns: 290px minmax(0, 1fr);
+    }
+
+    .iz-price-modal-info {
+        padding: 38px 28px;
+    }
+
+    .iz-price-modal-info h2 {
+        font-size: 32px;
+    }
+
+    .iz-price-modal-form-area {
+        padding: 32px 30px 36px;
+    }
+
+}
+
+/* Mobil */
+
+@media screen and (max-width: 767px) {
+
+    .iz-price-modal {
+        padding: 0;
+    }
+
+    .iz-price-modal-dialog {
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+        border-radius: 0;
+    }
+
+    .iz-price-modal-info {
+        padding: 35px 24px;
+    }
+
+    .iz-price-modal-info h2 {
+        font-size: 32px;
+    }
+
+    .iz-price-modal-benefits {
+        display: none;
+    }
+
+    .iz-price-modal-form-area {
+        max-height: none;
+        overflow: visible;
+        padding: 30px 22px 45px;
+    }
+
+    .iz-price-form {
+        grid-template-columns: 1fr;
+    }
+
+    .iz-price-form-full {
+        grid-column: auto;
+    }
+
 }
 
 /*
@@ -1398,13 +1909,13 @@ HİZMETLER SAYFASI ANA MENÜ
 
 </a>
                 <div class="tools flex items-center">
-<a href="tel:03123120000" title="Çağrı Merkezi" class="call text-right sm:hidden">
+<a href="tel:+902626427127" title="Çağrı Merkezi" class="call text-right sm:hidden">
     <div class="title text-white text-14 font-light leading-none mb-5">
         Çağrı Merkezi
     </div>
 
     <div class="number leading-none tracking-tighter text-white font-bold text-24 duration-350">
-        0 (312) 312 00 00
+        0262 642 71 27
     </div>
 </a>
 
@@ -1444,11 +1955,12 @@ HİZMETLER SAYFASI ANA MENÜ
                     Çözümleri
                 </h1>
 
-                <p class="services-hero-description">
-                    Özel güvenlikten profesyonel temizliğe, personel
-                    temininden dezenfekte uygulamalarına kadar işletmenizin
-                    tüm hizmet ihtiyaçlarını tek çatı altında karşılıyoruz.
-                </p>
+<p class="services-hero-description">
+    Özel güvenlikten profesyonel temizliğe, personel temininden
+    dezenfekte uygulamalarına; elektronik güvenlik sistemlerinden
+    özel güvenlik görevlisi eğitimine kadar işletmenizin ihtiyaçlarını
+    tek çatı altında karşılıyoruz.
+</p>
 
                 <div class="services-hero-actions">
 
@@ -1462,7 +1974,7 @@ HİZMETLER SAYFASI ANA MENÜ
                     </a>
 
                     <a
-                        href="tel:03123120000"
+                        href="tel:+902626427127"
                         class="services-hero-button services-hero-button-outline">
 
                         <span>Bizi Arayın</span>
@@ -1478,7 +1990,7 @@ HİZMETLER SAYFASI ANA MENÜ
 
     </section>
 
-    <!-- DÖRT ANA HİZMET -->
+    <!-- ALTI ANA HİZMET -->
     <section id="ana-hizmetler" class="main-services">
 
         <div class="lg:container mx-auto px-30">
@@ -1655,6 +2167,95 @@ HİZMETLER SAYFASI ANA MENÜ
                     <p>
                         Mikroorganizmalara karşı etkili profesyonel
                         dezenfekte çözümleri.
+                    </p>
+
+                    <div class="main-service-card-link">
+                        Detayları İncele
+                        <span>→</span>
+                    </div>
+
+                </a>
+
+                                <!-- 05 Elektronik Güvenlik -->
+                <a
+                    href="javascript:;"
+                    class="main-service-card js-service-modal-open"
+                    data-service="electronic-security"
+                    aria-label="Elektronik Güvenlik Hizmetleri detaylarını incele">
+
+                    <div class="main-service-card-header">
+
+                        <div class="main-service-icon">
+
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <rect x="8" y="11" width="25" height="18" rx="3"></rect>
+                                <path d="M33 17l7-4v14l-7-4"></path>
+                                <path d="M14 35h22"></path>
+                                <path d="M20 29v6"></path>
+                                <path d="M30 29v6"></path>
+                                <circle cx="20" cy="20" r="4"></circle>
+                            </svg>
+
+                        </div>
+
+                        <div class="main-service-number">
+                            05
+                        </div>
+
+                    </div>
+
+                    <h2>
+                        Elektronik Güvenlik
+                        <span>Hizmetleri</span>
+                    </h2>
+
+                    <p>
+                        Kamera, alarm, geçiş kontrol ve elektronik güvenlik
+                        sistemleriyle entegre koruma çözümleri.
+                    </p>
+
+                    <div class="main-service-card-link">
+                        Detayları İncele
+                        <span>→</span>
+                    </div>
+
+                </a>
+
+
+                <!-- 06 Özel Güvenlik Görevlisi Eğitimi -->
+                <a
+                    href="javascript:;"
+                    class="main-service-card js-service-modal-open"
+                    data-service="security-training"
+                    aria-label="Özel Güvenlik Görevlisi Eğitimi detaylarını incele">
+
+                    <div class="main-service-card-header">
+
+                        <div class="main-service-icon">
+
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M5 17 24 8l19 9-19 9L5 17Z"></path>
+                                <path d="M12 21v10c5 6 19 6 24 0V21"></path>
+                                <path d="M43 17v13"></path>
+                                <circle cx="43" cy="33" r="2"></circle>
+                            </svg>
+
+                        </div>
+
+                        <div class="main-service-number">
+                            06
+                        </div>
+
+                    </div>
+
+                    <h2>
+                        Özel Güvenlik Görevlisi
+                        <span>Eğitimi</span>
+                    </h2>
+
+                    <p>
+                        Güvenlik personelinin mesleki bilgi ve yetkinliklerini
+                        geliştirmeye yönelik profesyonel eğitim çözümleri.
                     </p>
 
                     <div class="main-service-card-link">
@@ -1892,21 +2493,20 @@ HİZMETLER SAYFASI ANA MENÜ
                     <div class="iz-service-modal-footer-text">
 
                         <strong>
-                            İşletmeniz için doğru çözümü birlikte belirleyelim.
+                            İşletmeniz için size özel fiyat teklifi alın.
                         </strong>
 
                         <span>
-                            Hizmet kapsamı hakkında ayrıntılı bilgi alabilirsiniz.
+                            İhtiyacınızı bize iletin, hizmet kapsamınıza uygun teklif hazırlayalım.
                         </span>
 
                     </div>
 
-                    <a
-                        href="../iletisim/index.html"
-                        class="iz-service-modal-contact">
-                        İletişime Geçin
-                    </a>
-
+                    <button
+                        type="button"
+                        class="iz-service-modal-contact js-price-form-open">
+                        Fiyat Al
+                    </button>
                 </div>
 
             </div>
@@ -1917,7 +2517,250 @@ HİZMETLER SAYFASI ANA MENÜ
 
 </div>
 
-<!-- footer -->
+<!-- FİYAT AL MODALI -->
+<div
+    class="iz-price-modal"
+    id="izPriceModal"
+    aria-hidden="true">
+
+    <div
+        class="iz-price-modal-backdrop"
+        data-price-modal-close>
+    </div>
+
+    <div
+        class="iz-price-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="izPriceModalTitle">
+
+        <!-- Sol alan -->
+        <div class="iz-price-modal-info">
+
+            <div class="iz-price-modal-brand">
+                İZ ÖZEL GÜVENLİK
+            </div>
+
+            <h2>
+                Size Özel<br>
+                <strong>Fiyat Teklifi</strong>
+            </h2>
+
+            <p>
+                İhtiyacınızı bize iletin. Ekibimiz hizmet kapsamınızı
+                değerlendirerek sizinle en kısa sürede iletişime geçsin.
+            </p>
+
+            <div class="iz-price-modal-benefits">
+
+                <div class="iz-price-modal-benefit">
+                    <span>✓</span>
+                    <div>
+                        <strong>İhtiyaca özel çözüm</strong>
+                        <small>İşletmenize uygun hizmet planlaması</small>
+                    </div>
+                </div>
+
+                <div class="iz-price-modal-benefit">
+                    <span>✓</span>
+                    <div>
+                        <strong>Profesyonel değerlendirme</strong>
+                        <small>Uzman ekibimiz tarafından ihtiyaç analizi</small>
+                    </div>
+                </div>
+
+                <div class="iz-price-modal-benefit">
+                    <span>✓</span>
+                    <div>
+                        <strong>Hızlı geri dönüş</strong>
+                        <small>Talebiniz sonrasında sizinle iletişime geçelim</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Sağ form alanı -->
+        <div class="iz-price-modal-form-area">
+
+            <div class="iz-price-modal-top">
+
+                <div>
+                    <span>Fiyat Talebi</span>
+
+                    <h3 id="izPriceModalTitle">
+                        Teklif Formu
+                    </h3>
+                </div>
+
+                <button
+                    type="button"
+                    class="iz-price-modal-close"
+                    data-price-modal-close
+                    aria-label="Fiyat formunu kapat">
+                    ×
+                </button>
+
+            </div>
+
+            <form
+                id="izPriceForm"
+                class="iz-price-form"
+                action="../teklif-gonder.php"
+                method="POST">
+
+                <input
+    type="text"
+    name="website"
+    tabindex="-1"
+    autocomplete="off"
+    style="position:absolute;left:-9999px;opacity:0;pointer-events:none;"
+    aria-hidden="true">
+
+                <!-- Seçilen hizmet -->
+                <div class="iz-price-form-group iz-price-form-full">
+
+                    <label for="izPriceService">
+                        İlgilendiğiniz Hizmet
+                    </label>
+
+                    <input
+                        type="text"
+                        id="izPriceService"
+                        name="hizmet"
+                        readonly
+                        required>
+
+                </div>
+
+                <!-- Ad Soyad -->
+                <div class="iz-price-form-group">
+
+                    <label for="izPriceName">
+                        Ad Soyad *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="izPriceName"
+                        name="ad_soyad"
+                        placeholder="Adınız ve soyadınız"
+                        autocomplete="name"
+                        required>
+
+                </div>
+
+                <!-- Firma -->
+                <div class="iz-price-form-group">
+
+                    <label for="izPriceCompany">
+                        Firma Adı
+                    </label>
+
+                    <input
+                        type="text"
+                        id="izPriceCompany"
+                        name="firma"
+                        placeholder="Firma adınız"
+                        autocomplete="organization">
+
+                </div>
+
+                <!-- Telefon -->
+                <div class="iz-price-form-group">
+
+                    <label for="izPricePhone">
+                        Telefon *
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="izPricePhone"
+                        name="telefon"
+                        placeholder="05XX XXX XX XX"
+                        autocomplete="tel"
+                        required>
+
+                </div>
+
+                <!-- E-posta -->
+                <div class="iz-price-form-group">
+
+                    <label for="izPriceEmail">
+                        E-posta *
+                    </label>
+
+                    <input
+                        type="email"
+                        id="izPriceEmail"
+                        name="email"
+                        placeholder="ornek@firma.com"
+                        autocomplete="email"
+                        required>
+
+                </div>
+
+                <!-- Mesaj -->
+                <div class="iz-price-form-group iz-price-form-full">
+
+                    <label for="izPriceMessage">
+                        Talebiniz / Mesajınız
+                    </label>
+
+                    <textarea
+                        id="izPriceMessage"
+                        name="mesaj"
+                        rows="5"
+                        placeholder="Hizmet almak istediğiniz alan, personel sayısı, tesis bilgileri veya diğer detayları yazabilirsiniz."></textarea>
+
+                </div>
+
+                <!-- Onay -->
+                <label class="iz-price-form-consent iz-price-form-full">
+
+                    <input
+                        type="checkbox"
+                        name="onay"
+                        value="1"
+                        required>
+
+                    <span>
+                        İletmiş olduğum bilgilerin fiyat talebimin değerlendirilmesi
+                        ve benimle iletişime geçilmesi amacıyla kullanılmasını kabul ediyorum.
+                    </span>
+
+                </label>
+
+                <!-- Gönder -->
+                <div class="iz-price-form-submit iz-price-form-full">
+
+                    <button type="submit">
+                        <span>Fiyat Talebini Gönder</span>
+                        <span>→</span>
+                    </button>
+
+                    <small>
+                        Talebiniz İZ Özel Güvenlik ekibine iletilecektir.
+                    </small>
+
+                </div>
+
+                <div
+    id="izPriceFormResult"
+    class="iz-price-form-result iz-price-form-full"
+    aria-live="polite">
+</div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- /FİYAT AL MODALI -->
+
 <!-- footer -->
 <footer class="footer-field mt-120 ct:mt-90 lg:mt-75 md:mt-60 sm:mt-45">
     <div class="ct:container mx-auto">
@@ -1996,6 +2839,18 @@ HİZMETLER SAYFASI ANA MENÜ
 
                     <div class="menu text-24 sm:text-22 leading-tight space-y-20">
 
+                        <a href="../index.html"
+   title="Anasayfa"
+   class="item block text-woodsmoke font-light flex items-center space-x-10">
+
+    <span>Anasayfa</span>
+
+    <span
+        class="icon icon-arrow-to-right text-18 leading-0 text-woodsmoke block duration-300 relative z-2">
+    </span>
+
+</a>
+
                         <a href="../iz-hakkinda.html"
                            title="Kurumsal"
                            class="item block text-woodsmoke font-light flex items-center space-x-10">
@@ -2020,7 +2875,7 @@ HİZMETLER SAYFASI ANA MENÜ
 
                         </a>
 
-                        <a href="index.html"
+                        <a href="../iletisim/index.html"
                            title="İletişim"
                            class="item block text-woodsmoke font-light flex items-center space-x-10">
 
@@ -2086,8 +2941,29 @@ HİZMETLER SAYFASI ANA MENÜ
                             <span
                                 class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2">
                             </span>
-
                         </a>
+
+                        <a href="../projeler/1.html"
+   title="Elektronik Güvenlik Hizmetleri"
+   class="item block text-woodsmoke flex items-center">
+
+    <span>Elektronik Güvenlik Hizmetleri</span>
+
+    <span
+        class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2">
+    </span>
+</a>
+
+<a href="../projeler/1.html"
+   title="Özel Güvenlik Görevlisi Eğitimi"
+   class="item block text-woodsmoke flex items-center">
+
+    <span>Özel Güvenlik Görevlisi Eğitimi</span>
+
+    <span
+        class="icon icon-arrow-to-right text-14 leading-0 text-woodsmoke block duration-300 relative z-2">
+    </span>
+</a>
 
                     </div>
 
@@ -2294,22 +3170,20 @@ HİZMETLER SAYFASI ANA MENÜ
 
                         <div class="contacts mt-0 text-left">
 
-                            <a href="https://maps.app.goo.gl/q4DsiaR6AHsTGCEEA"
+                            <a href="https://www.google.com/maps/search/?api=1&query=Sultan+Orhan+Mah.+1104.+SK.+Kap%C4%B1+No%3A2+Daire+No%3A3+Gebze%2FKocaeli"
                                title="Adres"
                                target="_blank"
                                class="item block leading-tight font-light text-white mb-15">
 
-                                Bahçe Mahallesi (Eski 4602 Sokak)
-                                4607 Sokak No:4 Zemin:16,
-                                33010 Akdeniz/Mersin
+Sultan Orhan Mah. 1104. SK. Kapı No:2 Daire No:3 GEBZE/KOCAELİ
 
                             </a>
 
-                            <a href="tel:03123120000"
+                            <a href="tel:+902626427127"
                                title="Telefon"
                                class="item block leading-tight font-bold text-white">
 
-                                0 (312) 312 00 00
+                                0262 642 71 27
 
                             </a>
 
@@ -2317,7 +3191,7 @@ HİZMETLER SAYFASI ANA MENÜ
 
                         <div class="button-group flex space-x-15 justify-start mt-30">
 
-                            <a href="https://maps.app.goo.gl/q4DsiaR6AHsTGCEEA"
+                            <a href="https://www.google.com/maps/search/?api=1&query=Sultan+Orhan+Mah.+1104.+SK.+Kap%C4%B1+No%3A2+Daire+No%3A3+Gebze%2FKocaeli"
                                title="Haritayı Gör"
                                target="_blank"
                                class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 black w-fit bg-woodsmoke px-30 w-full rounded-100 h-40">
@@ -2331,7 +3205,7 @@ HİZMETLER SAYFASI ANA MENÜ
 
                             </a>
 
-                            <a href="https://maps.app.goo.gl/q4DsiaR6AHsTGCEEA"
+                            <a href="https://www.google.com/maps/search/?api=1&query=Sultan+Orhan+Mah.+1104.+SK.+Kap%C4%B1+No%3A2+Daire+No%3A3+Gebze%2FKocaeli"
                                title="Yol Tarifi Al"
                                target="_blank"
                                class="button flex items-center justify-center relative cursor-pointer border-0 backface-hidden overflow-hidden isolate duration-450 white w-fit bg-white px-30 w-full rounded-100 h-40">
@@ -2380,17 +3254,6 @@ HİZMETLER SAYFASI ANA MENÜ
 
                             </a>
 
-                            <a href="../projeler/1.html"
-                               title="Hizmetlerimiz"
-                               class="item block text-white font-medium flex items-center justify-end space-x-10 mr-0 ml-auto">
-
-                                <span>Hizmetlerimiz</span>
-
-                                <span
-                                    class="icon icon-arrow-to-right text-22 leading-0 text-white block duration-300 relative z-2">
-                                </span>
-
-                            </a>
 
                             <a href="../iletisim/index.html" title="İletişim"
                                title="İletişim"
@@ -2962,7 +3825,210 @@ document.addEventListener("DOMContentLoaded", function () {
                     ]
                 }
             ]
+        },
+
+        /*
+        ======================================
+        ELEKTRONİK GÜVENLİK
+        ======================================
+        */
+
+        "electronic-security": {
+            category: "Elektronik Güvenlik Hizmetleri",
+            icon: "◉",
+
+            items: [
+                {
+                    title: "Elektronik Güvenlik Hizmetleri",
+                    eyebrow: "Teknolojiyle desteklenen kesintisiz güvenlik",
+                    description:
+                        "İşletme ve yaşam alanlarında güvenlik seviyesini artırmak amacıyla kamera sistemleri, alarm çözümleri, geçiş kontrol sistemleri ve diğer elektronik güvenlik teknolojilerinin planlanması ve uygulanmasına yönelik profesyonel çözümler sunuyoruz.",
+
+                    highlights: [
+                        "İhtiyaca özel elektronik güvenlik planlaması",
+                        "Modern ve güvenilir güvenlik teknolojileri",
+                        "Fiziki güvenlik hizmetleriyle entegre çözümler"
+                    ],
+
+                    scope: [
+                        "Kamera ve CCTV sistemleri",
+                        "Alarm ve ihbar sistemleri",
+                        "Kartlı geçiş sistemleri",
+                        "Personel giriş-çıkış kontrolü",
+                        "Uzaktan izleme çözümleri",
+                        "Sistem kontrolü ve teknik destek"
+                    ]
+                },
+
+                {
+                    title: "Kamera ve CCTV Sistemleri",
+                    eyebrow: "Alanlarınızı sürekli kontrol altında tutun",
+                    description:
+                        "İşletme, tesis ve yaşam alanlarında ihtiyaç duyulan noktaların kesintisiz izlenebilmesi için profesyonel kamera ve CCTV çözümleri sunuyoruz. Kamera yerleşimleri saha yapısı ve güvenlik riskleri dikkate alınarak planlanır.",
+
+                    highlights: [
+                        "Kritik alanlara özel kamera planlaması",
+                        "Yüksek görüntü kalitesi",
+                        "Uzaktan izleme imkânı"
+                    ],
+
+                    scope: [
+                        "İç ve dış alan kameraları",
+                        "Gece görüş sistemleri",
+                        "Kayıt sistemleri",
+                        "Uzaktan görüntüleme",
+                        "Kamera konumlandırma",
+                        "Sistem kontrolü"
+                    ]
+                },
+
+                {
+                    title: "Alarm ve İhbar Sistemleri",
+                    eyebrow: "Olası risklere hızlı müdahale",
+                    description:
+                        "Hırsızlık, izinsiz giriş ve benzeri güvenlik risklerine karşı alarm ve erken uyarı sistemleriyle alanların daha etkin biçimde korunmasına yardımcı oluyoruz.",
+
+                    highlights: [
+                        "Erken uyarı sistemi",
+                        "Riskli noktalara özel sensör planlaması",
+                        "Hızlı bildirim ve müdahale desteği"
+                    ],
+
+                    scope: [
+                        "Hırsız alarm sistemleri",
+                        "Hareket sensörleri",
+                        "Kapı ve pencere sensörleri",
+                        "Panik butonları",
+                        "Alarm bildirim sistemleri",
+                        "Sistem kontrolü"
+                    ]
+                },
+
+                {
+                    title: "Geçiş Kontrol Sistemleri",
+                    eyebrow: "Yetkisiz erişimi kontrol altında tutun",
+                    description:
+                        "Personel, ziyaretçi ve araç giriş çıkışlarının kontrollü şekilde yönetilmesi için işletmenin ihtiyaçlarına uygun elektronik geçiş kontrol sistemleri oluşturuyoruz.",
+
+                    highlights: [
+                        "Yetkilendirilmiş giriş sistemi",
+                        "Personel hareketlerinin kontrollü takibi",
+                        "İşletmeye özel erişim planlaması"
+                    ],
+
+                    scope: [
+                        "Kartlı geçiş sistemleri",
+                        "Turnike sistemleri",
+                        "Parmak izi sistemleri",
+                        "Yüz tanıma sistemleri",
+                        "Personel takip sistemleri",
+                        "Araç geçiş sistemleri"
+                    ]
+                }
+            ]
+        },
+
+        /*
+        ======================================
+        ÖZEL GÜVENLİK GÖREVLİSİ EĞİTİMİ
+        ======================================
+        */
+
+        "security-training": {
+            category: "Özel Güvenlik Görevlisi Eğitimi",
+            icon: "◇",
+
+            items: [
+                {
+                    title: "Özel Güvenlik Görevlisi Eğitimi",
+                    eyebrow: "Profesyonel güvenliğin temeli doğru eğitimdir",
+                    description:
+                        "Özel güvenlik personelinin mesleki bilgi, disiplin, iletişim ve görev yetkinliklerini geliştirmeye yönelik eğitim çözümleri sunuyoruz. Eğitim süreçlerinde güvenlik personelinin sahada karşılaşabileceği durumlara hazırlıklı olması hedeflenir.",
+
+                    highlights: [
+                        "Mesleki bilgi ve yetkinlik gelişimi",
+                        "Saha uygulamalarına yönelik eğitim",
+                        "Profesyonel güvenlik anlayışı"
+                    ],
+
+                    scope: [
+                        "Temel güvenlik bilgileri",
+                        "Görev ve sorumluluk eğitimi",
+                        "İletişim ve davranış eğitimi",
+                        "Risk ve olay değerlendirmesi",
+                        "Acil durum farkındalığı",
+                        "Saha uygulamaları"
+                    ]
+                },
+
+                {
+                    title: "Görev ve Saha Eğitimi",
+                    eyebrow: "Personeli görev alanına hazırlayan eğitim",
+                    description:
+                        "Güvenlik personelinin görev yapacağı tesisin özelliklerine, risklerine ve çalışma düzenine uygun saha eğitimleri gerçekleştiriyoruz.",
+
+                    highlights: [
+                        "Tesise özel eğitim planı",
+                        "Görev noktalarına yönelik uygulama",
+                        "Saha risklerine karşı hazırlık"
+                    ],
+
+                    scope: [
+                        "Görev noktalarının tanıtılması",
+                        "Giriş çıkış prosedürleri",
+                        "Devriye uygulamaları",
+                        "Ziyaretçi yönetimi",
+                        "Olay bildirim süreçleri",
+                        "Vardiya ve görev düzeni"
+                    ]
+                },
+
+                {
+                    title: "İletişim ve Davranış Eğitimi",
+                    eyebrow: "Profesyonel duruş ve doğru iletişim",
+                    description:
+                        "Güvenlik görevlilerinin çalışanlar, ziyaretçiler ve müşterilerle doğru iletişim kurabilmesi için etkili iletişim, beden dili ve kriz anında davranış konularında eğitimler sağlıyoruz.",
+
+                    highlights: [
+                        "Etkili iletişim becerileri",
+                        "Profesyonel temsil anlayışı",
+                        "Zor durumlarda doğru yaklaşım"
+                    ],
+
+                    scope: [
+                        "Etkili iletişim",
+                        "Beden dili",
+                        "Ziyaretçi iletişimi",
+                        "Öfke ve stres yönetimi",
+                        "Çatışma yönetimi",
+                        "Profesyonel davranış"
+                    ]
+                },
+
+                {
+                    title: "Acil Durum ve Olay Yönetimi Eğitimi",
+                    eyebrow: "Beklenmeyen durumlara hazırlıklı personel",
+                    description:
+                        "Güvenlik personelinin acil durumlarda doğru karar verebilmesi, ilgili birimlerle koordinasyon sağlayabilmesi ve olaylara kontrollü şekilde müdahale edebilmesi için uygulamalı eğitimler sunuyoruz.",
+
+                    highlights: [
+                        "Acil durum farkındalığı",
+                        "Doğru müdahale yaklaşımı",
+                        "Koordinasyon ve raporlama becerisi"
+                    ],
+
+                    scope: [
+                        "Acil durum prosedürleri",
+                        "Tahliye süreçleri",
+                        "Olay yeri kontrolü",
+                        "İlk müdahale yaklaşımı",
+                        "Yetkili birimlerle iletişim",
+                        "Olay raporlama"
+                    ]
+                }
+            ]
         }
+
     };
 
 
@@ -2982,6 +4048,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const highlightsElement = document.getElementById("izServiceModalHighlights");
     const scopeElement = document.getElementById("izServiceModalScope");
+
+        /*
+    ======================================
+    FİYAT AL MODALI ELEMANLARI
+    ======================================
+    */
+
+    const priceModal = document.getElementById("izPriceModal");
+    const priceForm = document.getElementById("izPriceForm");
+    const priceServiceInput = document.getElementById("izPriceService");
+    const priceOpenButton = document.querySelector(".js-price-form-open");
+    const priceFormResult = document.getElementById("izPriceFormResult");
+const priceSubmitButton = priceForm?.querySelector('button[type="submit"]');
 
     let activeServiceKey = null;
     let activeItemIndex = 0;
@@ -3149,6 +4228,133 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.remove("iz-modal-open");
     }
 
+        /*
+    ======================================
+    FİYAT AL MODALINI AÇ
+    ======================================
+    */
+
+    function openPriceModal() {
+
+        if (!priceModal || !priceServiceInput) {
+            return;
+        }
+
+        const service = servicesData[activeServiceKey];
+
+        if (!service) {
+            return;
+        }
+
+        priceServiceInput.value = service.category;
+
+        priceModal.classList.add("is-open");
+        priceModal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("iz-modal-open");
+
+        window.setTimeout(function () {
+
+            const firstInput = document.getElementById("izPriceName");
+
+            firstInput?.focus();
+
+        }, 200);
+    }
+
+
+    /*
+    ======================================
+    FİYAT AL MODALINI KAPAT
+    ======================================
+    */
+
+    function closePriceModal() {
+
+        if (!priceModal) {
+            return;
+        }
+
+        priceModal.classList.remove("is-open");
+        priceModal.setAttribute("aria-hidden", "true");
+
+        if (!modal?.classList.contains("is-open")) {
+            document.body.classList.remove("iz-modal-open");
+        }
+    }
+
+    /*
+======================================
+FİYAT FORMU GÖNDERİMİ
+======================================
+*/
+
+priceForm?.addEventListener("submit", async function (event) {
+
+    event.preventDefault();
+
+    if (!priceFormResult || !priceSubmitButton) {
+        return;
+    }
+
+    priceFormResult.className = "iz-price-form-result iz-price-form-full";
+    priceFormResult.textContent = "";
+
+    priceSubmitButton.disabled = true;
+
+    const originalButtonHTML = priceSubmitButton.innerHTML;
+
+    priceSubmitButton.innerHTML = `
+        <span>Gönderiliyor...</span>
+        <span>...</span>
+    `;
+
+    try {
+
+        const formData = new FormData(priceForm);
+
+        const response = await fetch(priceForm.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                "X-Requested-With": "XMLHttpRequest"
+            }
+        });
+
+        const data = await response.json();
+
+        if (!response.ok || !data.success) {
+            throw new Error(data.message || "Talebiniz gönderilemedi.");
+        }
+
+        priceFormResult.className =
+            "iz-price-form-result iz-price-form-full is-visible is-success";
+
+        priceFormResult.textContent =
+            data.message || "Fiyat talebiniz başarıyla iletildi.";
+
+        const currentService = priceServiceInput.value;
+
+        priceForm.reset();
+
+        priceServiceInput.value = currentService;
+
+    } catch (error) {
+
+        priceFormResult.className =
+            "iz-price-form-result iz-price-form-full is-visible is-error";
+
+        priceFormResult.textContent =
+            error.message ||
+            "Talebiniz gönderilirken bir hata oluştu. Lütfen tekrar deneyin.";
+
+    } finally {
+
+        priceSubmitButton.disabled = false;
+        priceSubmitButton.innerHTML = originalButtonHTML;
+
+    }
+
+});
 
     /*
     ======================================
@@ -3171,6 +4377,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 
+            /*
+    ======================================
+    FİYAT AL BUTONU
+    ======================================
+    */
+
+    priceOpenButton?.addEventListener("click", function () {
+
+        openPriceModal();
+
+    });
+
+
+
     /*
     ======================================
     KAPATMA BUTONLARI
@@ -3187,6 +4407,23 @@ document.addEventListener("DOMContentLoaded", function () {
             );
         });
 
+            /*
+    ======================================
+    FİYAT AL MODALI KAPATMA BUTONLARI
+    ======================================
+    */
+
+    priceModal
+        ?.querySelectorAll("[data-price-modal-close]")
+        .forEach(function (closeElement) {
+
+            closeElement.addEventListener(
+                "click",
+                closePriceModal
+            );
+
+        });
+
 
     /*
     ======================================
@@ -3196,13 +4433,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener("keydown", function (event) {
 
-        if (!modal?.classList.contains("is-open")) {
-            return;
-        }
+    if (
+        event.key === "Escape" &&
+        priceModal?.classList.contains("is-open")
+    ) {
 
-        if (event.key === "Escape") {
-            closeServiceModal();
-        }
+        closePriceModal();
+        return;
+    }
+
+    if (!modal?.classList.contains("is-open")) {
+        return;
+    }
+
+    if (event.key === "Escape") {
+        closeServiceModal();
+        return;
+    }
 
         if (
             event.key === "ArrowDown" ||
